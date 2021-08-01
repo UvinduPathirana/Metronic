@@ -1,0 +1,4421 @@
+<!DOCTYPE html>
+<!--
+Author: Keenthemes
+Product Name: Metronic - Bootstrap 5 HTML, VueJS, React, Angular & Laravel Admin Dashboard Theme 
+Purchase: https://1.envato.market/EA4JP
+Website: http://www.keenthemes.com
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
+<html lang="en">
+	<!--begin::Head-->
+	
+<!-- Mirrored from preview.keenthemes.com/metronic8/demo1/documentation/general/datatables/advanced.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Jul 2021 17:34:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<title>Advanced DataTables and Bootstrap Integration by Keenthemes</title>
+		<meta name="description" content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
+		<meta name="keywords" content="Metronic, bootstrap, bootstrap 5, Angular, VueJs, React, Laravel, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Metronic - Bootstrap 5 HTML, VueJS, React, Angular &amp; Laravel Admin Dashboard Theme" />
+		<meta property="og:url" content="https://keenthemes.com/metronic" />
+		<meta property="og:site_name" content="Keenthemes | Metronic" />
+		<link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
+		<link rel="shortcut icon" href="../../../assets/media/logos/favicon.ico" />
+		<!--begin::Fonts-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+		<!--end::Fonts-->
+		<!--begin::Page Vendor Stylesheets(used by this page)-->
+		<link href="../../../assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../../../assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Page Vendor Stylesheets-->
+		<!--begin::Global Stylesheets Bundle(used by all pages)-->
+		<link href="../../../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../../../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Global Stylesheets Bundle-->
+		<!--Begin::Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src= '../../../../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-5FS8GGP');</script>
+		<!--End::Google Tag Manager -->
+	</head>
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body>
+		<!--begin::Main-->
+		<div class="d-flex flex-column flex-root">
+			<!--begin::Page-->
+			<div class="docs-page d-flex flex-row flex-column-fluid">
+				<!--begin::Aside-->
+				<div id="kt_docs_aside" class="docs-aside" data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_docs_aside_toggle">
+					<!--begin::Logo-->
+					<div class="docs-aside-logo flex-column-auto h-75px" id="kt_docs_aside_logo">
+						<!--begin::Link-->
+						<a href="../../../index-2.html">
+							<img alt="Logo" src="../../../assets/media/logos/logo-1-dark.svg" class="h-15px" />
+						</a>
+						<!--end::Link-->
+					</div>
+					<!--end::Logo-->
+					<!--begin::Menu-->
+					<div class="docs-aside-menu flex-column-fluid">
+						<!--begin::Aside Menu-->
+						<div class="hover-scroll-overlay-y mt-5 mb-5 mt-lg-0 mb-lg-5 pe-lg-n2 me-lg-2" id="kt_docs_aside_menu_wrapper" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_docs_aside_logo" data-kt-scroll-wrappers="#kt_docs_aside_menu" data-kt-scroll-offset="10px">
+							<!--begin::Menu-->
+							<div class="menu menu-column menu-title-gray-800 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500" id="#kt_docs_aside_menu" data-kt-menu="true">
+								<div class="menu-item">
+									<h4 class="menu-content text-muted mb-0 fs-7 text-uppercase">Getting Started</h4>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../getting-started.html">
+										<span class="menu-title">Overview</span>
+									</a>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">Build</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../getting-started/build/gulp.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Gulp</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../getting-started/build/webpack.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Webpack</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../getting-started/multi-demo.html">
+										<span class="menu-title">Multi-demo</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../getting-started/file-structure.html">
+										<span class="menu-title">File Structure</span>
+									</a>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">Customization</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../getting-started/customization/sass.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">SASS</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../getting-started/customization/javascript.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Javascript</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../getting-started/dark-mode.html">
+										<span class="menu-title">Dark Mode</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../getting-started/rtl.html">
+										<span class="menu-title">RTL Version</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../../layout-builder.html" target="blank">
+										<span class="menu-title">Layout Builder</span>
+									</a>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">Server Side Integration</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../getting-started/integration/blazor.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Blazor</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../getting-started/updates.html">
+										<span class="menu-title">Updates</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../getting-started/changelog.html">
+										<span class="menu-title">Changelog 
+										<span class="badge badge-changelog badge-light-danger bg-hover-danger text-hover-white fw-bold fs-9 px-2 ms-2">v8.0.21</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../getting-started/references.html">
+										<span class="menu-title">References</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<div class="h-30px"></div>
+								</div>
+								<div class="menu-item">
+									<h4 class="menu-content text-muted mb-0 fs-7 text-uppercase">Base</h4>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/utilities.html">
+										<span class="menu-title">Utilities</span>
+									</a>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">Helpers</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../base/helpers/flex-layouts.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Flex Layouts
+												<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../base/helpers/text.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Text</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../base/helpers/background.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Background</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../base/helpers/borders.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Borders</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../base/helpers/opacity.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Opacity</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/forms.html">
+										<span class="menu-title">Forms</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/buttons.html">
+										<span class="menu-title">Buttons</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/accordion.html">
+										<span class="menu-title">Accordion</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/alerts.html">
+										<span class="menu-title">Alerts</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/badges.html">
+										<span class="menu-title">Badges</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/breadcrumb.html">
+										<span class="menu-title">Breadcrumb</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/bullets.html">
+										<span class="menu-title">Bullets
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/cards.html">
+										<span class="menu-title">Cards</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/carousel.html">
+										<span class="menu-title">Carousel</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/indicator.html">
+										<span class="menu-title">Indicator
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/modal.html">
+										<span class="menu-title">Modal</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/overlay.html">
+										<span class="menu-title">Overlay
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/pagination.html">
+										<span class="menu-title">Pagination</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/popovers.html">
+										<span class="menu-title">Popovers</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/tooltips.html">
+										<span class="menu-title">Tooltips</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/pulse.html">
+										<span class="menu-title">Pulse
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/rating.html">
+										<span class="menu-title">Rating
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/ribbon.html">
+										<span class="menu-title">Ribbon
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/rotate.html">
+										<span class="menu-title">Rotate
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/separator.html">
+										<span class="menu-title">Separator
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/symbol.html">
+										<span class="menu-title">Symbol
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/tables.html">
+										<span class="menu-title">Tables</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../base/tabs.html">
+										<span class="menu-title">Tabs</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<div class="h-30px"></div>
+								</div>
+								<div class="menu-item">
+									<h4 class="menu-content text-muted mb-0 fs-7 text-uppercase">Forms</h4>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../forms/clipboard.html">
+										<span class="menu-title">Clipboard</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../forms/daterangepicker.html">
+										<span class="menu-title">Date Range Picker</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../forms/dialer.html">
+										<span class="menu-title">Dialer
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../forms/dropzonejs.html">
+										<span class="menu-title">DropzoneJS</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../forms/flatpickr.html">
+										<span class="menu-title">Flatpickr</span>
+									</a>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">FormValidation</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../forms/formvalidation/overview.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Overview</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../forms/formvalidation/basic.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Basic</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../forms/formvalidation/advanced.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Advanced</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../forms/image-input.html">
+										<span class="menu-title">Image Input
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../forms/inputmask.html">
+										<span class="menu-title">Inputmask</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../forms/bootstrap-multiselectsplitter.html">
+										<span class="menu-title">Multiselectsplitter</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../forms/nouislider.html">
+										<span class="menu-title">noUiSlider</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../forms/password-meter.html">
+										<span class="menu-title">Password Meter
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../forms/google-recaptcha.html">
+										<span class="menu-title">reCAPTCHA</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../forms/select2.html">
+										<span class="menu-title">Select2</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../forms/tagify.html">
+										<span class="menu-title">Tagify</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<div class="h-30px"></div>
+								</div>
+								<div class="menu-item">
+									<h4 class="menu-content text-muted mb-0 fs-7 text-uppercase">Editors</h4>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">TinyMCE</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../editors/tinymce/overview.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Overview</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../editors/tinymce/basic.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Basic</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../editors/tinymce/plugins.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Plugin Addons</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../editors/tinymce/hidden.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Hidden Menubar</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">CKEditor</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../editors/ckeditor/overview.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Overview</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../editors/ckeditor/classic.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Classic</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../editors/ckeditor/inline.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Inline</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../editors/ckeditor/balloon.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Balloon</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../editors/ckeditor/balloon-block.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Balloon Block</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../editors/ckeditor/document.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Document</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">Quill</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../editors/quill/overview.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Overview</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../editors/quill/basic.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Basic</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../editors/quill/autosave.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Autosave</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="menu-item">
+									<div class="h-30px"></div>
+								</div>
+								<div class="menu-item">
+									<h4 class="menu-content text-muted mb-0 fs-7 text-uppercase">Charts</h4>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">AmCharts</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/amcharts/charts.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">AmChart Charts</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/amcharts/maps.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">AmChart Maps</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/amcharts/stock-charts.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">AmChart Stock Charts</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../charts/apexcharts.html">
+										<span class="menu-title">ApexCharts</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../charts/chartjs.html">
+										<span class="menu-title">ChartJS</span>
+									</a>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">Flotcharts</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/flotcharts/overview.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Overview</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/flotcharts/basic.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Basic Chart</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/flotcharts/axis.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Axis Labels</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/flotcharts/tracking.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Tracking Curves</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/flotcharts/dynamic.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Dynamic Chart</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/flotcharts/stack.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Stack Chart Controls</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/flotcharts/bar.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Bar Chart</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/flotcharts/pie.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Pie Chart</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">Google Charts</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/google-charts/overview.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Overview</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/google-charts/column.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Column Chart</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/google-charts/pie.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Pie Chart</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../../charts/google-charts/line.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Line Chart</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="menu-item">
+									<div class="h-30px"></div>
+								</div>
+								<div class="menu-item">
+									<h4 class="menu-content text-muted mb-0 fs-7 text-uppercase">General</h4>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">DataTables</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="overview.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Overview</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="basic.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Basic</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link active py-2" href="advanced.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Advanced</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="server-side.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Server Side</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="api.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">API</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">Fullcalendar</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../fullcalendar/overview.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Overview</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../fullcalendar/basic.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Basic</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../fullcalendar/drag-n-drop.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Drag-n-Drop</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../fullcalendar/selectable.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Selectable Dates</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../fullcalendar/background-events.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Background Events</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../fullcalendar/locales.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Localization</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../fullcalendar/timezone.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Timezone</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../menu.html">
+										<span class="menu-title">Menu
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../drawer.html">
+										<span class="menu-title">Drawer
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">jKanban Board</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../jkanban/overview.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Overview</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../jkanban/basic.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Basic</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../jkanban/color.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Colored</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../jkanban/restricted.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Restricted</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../jkanban/rich.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Rich Content</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../fslightbox.html">
+										<span class="menu-title">Fullscreen Lightbox</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../smooth-scroll.html">
+										<span class="menu-title">Smooth Scroll</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../stepper.html">
+										<span class="menu-title">Stepper
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../scroll.html">
+										<span class="menu-title">Scroll
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../search.html">
+										<span class="menu-title">Quick Search
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../sticky.html">
+										<span class="menu-title">Sticky
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../swapper.html">
+										<span class="menu-title">Swapper
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../blockui.html">
+										<span class="menu-title">BlockUI
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../toastr.html">
+										<span class="menu-title">Toastr</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../toggle.html">
+										<span class="menu-title">Toggle
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../typedjs.html">
+										<span class="menu-title">Typed.js</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../cropper.html">
+										<span class="menu-title">Cropper</span>
+									</a>
+								</div>
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<span class="menu-link py-2">
+										<span class="menu-title">Draggable</span>
+										<span class="menu-arrow"></span>
+									</span>
+									<div class="menu-sub menu-sub-accordion">
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../draggable/overview.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Overview</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../draggable/cards.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Draggable Cards</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../draggable/multiple-containers.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Multiple Containers</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../draggable/swappable.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Swappable</span>
+											</a>
+										</div>
+										<div class="menu-item">
+											<a class="menu-link py-2" href="../draggable/restricted.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Restricted</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../scrolltop.html">
+										<span class="menu-title">Scrolltop
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../cookie.html">
+										<span class="menu-title">Cookie
+										<span class="badge badge-exclusive badge-light-success fw-bold fs-9 px-2 py-1 ms-1">Exclusive</span></span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<div class="h-30px"></div>
+								</div>
+								<div class="menu-item">
+									<h4 class="menu-content text-muted mb-0 fs-7 text-uppercase">Icons</h4>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../icons/duotone.html">
+										<span class="menu-title">Duotone</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../icons/bootstrap-icons.html">
+										<span class="menu-title">Bootstrap Icons</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../icons/font-awesome.html">
+										<span class="menu-title">Font Awesome</span>
+									</a>
+								</div>
+								<div class="menu-item">
+									<a class="menu-link py-2" href="../../icons/line-awesome.html">
+										<span class="menu-title">Line Awesome</span>
+									</a>
+								</div>
+							</div>
+							<!--end::Menu-->
+						</div>
+					</div>
+					<!--end::Menu-->
+				</div>
+				<!--end::Aside-->
+				<!--begin::Wrapper-->
+				<div class="docs-wrapper d-flex flex-column flex-row-fluid" id="kt_docs_wrapper">
+					<!--begin::Header-->
+					<div id="kt_docs_header" class="docs-header align-items-stretch mb-2 mb-lg-10">
+						<!--begin::Container-->
+						<div class="container">
+							<div class="d-flex align-items-stretch justify-content-between py-3 h-75px">
+								<!--begin::Aside toggle-->
+								<div class="d-flex align-items-center d-lg-none me-3" title="Show aside menu">
+									<div class="btn btn-icon btn-flex btn-active-color-primary" id="kt_docs_aside_toggle">
+										<!--begin::Svg Icon | path: icons/duotone/Text/Menu.svg-->
+										<span class="svg-icon svg-icon-2tx mt-1">
+											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+													<rect x="0" y="0" width="24" height="24" />
+													<rect fill="#000000" x="4" y="5" width="16" height="3" rx="1.5" />
+													<path d="M5.5,15 L18.5,15 C19.3284271,15 20,15.6715729 20,16.5 C20,17.3284271 19.3284271,18 18.5,18 L5.5,18 C4.67157288,18 4,17.3284271 4,16.5 C4,15.6715729 4.67157288,15 5.5,15 Z M5.5,10 L18.5,10 C19.3284271,10 20,10.6715729 20,11.5 C20,12.3284271 19.3284271,13 18.5,13 L5.5,13 C4.67157288,13 4,12.3284271 4,11.5 C4,10.6715729 4.67157288,10 5.5,10 Z" fill="#000000" opacity="0.3" />
+												</g>
+											</svg>
+										</span>
+										<!--end::Svg Icon-->
+									</div>
+								</div>
+								<!--end::Aside toggle-->
+								<!--begin::Logo-->
+								<div class="d-flex d-lg-none align-items-center flex-grow-1 flex-lg-grow-0 me-lg-15">
+									<a href="../../../index-2.html">
+										<img alt="Logo" src="../../../assets/media/logos/logo-1-dark.svg" class="h-15px" />
+									</a>
+								</div>
+								<!--end::Logo-->
+								<!--begin::Wrapper-->
+								<div class="d-flex align-items-center justify-content-between flex-lg-grow-1">
+									<!--begin::Header title-->
+									<div class="d-flex align-items-center" id="kt_docs_header_title">
+										<!--begin::Page title-->
+										<div class="docs-page-title d-flex flex-column flex-lg-row align-items-lg-center py-5 mb-lg-0" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_docs_content_container', 'lg': '#kt_docs_header_title'}">
+											<!--begin::Title-->
+											<h1 class="d-flex align-items-center text-dark my-1 fs-4">Documentation 
+											<a href="../../getting-started/changelog.html" class="badge fw-bold fs-9 px-2 ms-2 badge-white text-hover-primary shadow-sm">v8.0.21</a></h1>
+											<!--end::Title-->
+											<!--begin::Separator-->
+											<span class="d-none d-lg-block bullet h-20px w-1px bg-secondary mx-4"></span>
+											<!--end::Separator-->
+											<!--begin::Breadcrumb-->
+											<ul class="breadcrumb breadcrumb-separatorless fw-bold fs-6 my-1">
+												<!--begin::Item-->
+												<li class="breadcrumb-item text-gray-600">General</li>
+												<!--end::Item-->
+												<!--begin::Item-->
+												<li class="breadcrumb-item">
+													<span class="bullet w-5px h-2px"></span>
+												</li>
+												<!--end::Item-->
+												<!--begin::Item-->
+												<li class="breadcrumb-item text-gray-600">DataTables</li>
+												<!--end::Item-->
+												<!--begin::Item-->
+												<li class="breadcrumb-item">
+													<span class="bullet w-5px h-2px"></span>
+												</li>
+												<!--end::Item-->
+												<!--begin::Item-->
+												<li class="breadcrumb-item text-dark">Advanced</li>
+												<!--end::Item-->
+											</ul>
+											<!--end::Breadcrumb-->
+										</div>
+										<!--end::Page title-->
+									</div>
+									<!--end::Header title-->
+									<!--begin::Toolbar-->
+									<div class="d-flex align-items-center">
+										<a class="btn btn-bg-white btn-color-gray-700 btn-active-primary fw-bolder me-4" href="https://preview.keenthemes.com/metronic8" target="_blank">Preview</a>
+										<a class="btn btn-primary fw-bolder" href="https://1.envato.market/EA4JP" target="_blank">Purchase</a>
+									</div>
+									<!--end::Toolbar-->
+								</div>
+								<!--end::Wrapper-->
+							</div>
+							<div class="border-gray-300 border-bottom border-bottom-dashed"></div>
+						</div>
+						<!--end::Container-->
+					</div>
+					<!--end::Header-->
+					<!--begin::Content-->
+					<div class="docs-content d-flex flex-column flex-column-fluid" id="kt_docs_content">
+						<!--begin::Container-->
+						<div class="container" id="kt_docs_content_container">
+							<!--begin::Card-->
+							<div class="card mb-2">
+								<!--begin::Card Body-->
+								<div class="card-body fs-6 py-15 px-10 py-lg-15 px-lg-15 text-gray-700">
+									<!--begin::Section-->
+									<div class="pb-10">
+										<!--begin::Heading-->
+										<h1 class="anchor fw-bolder mb-5" id="column-rendering">
+										<a href="#column-rendering"></a>Column Rendering</h1>
+										<!--end::Heading-->
+										<!--begin::Block-->
+										<div class="py-5">This example show badges rendered next to the position content dynamically. This technique can be useful for adding links, assigning colours based on content rules and any other form of text manipulation you require.</div>
+										<!--end::Block-->
+										<!--begin::Block-->
+										<div class="my-5">
+											<table id="kt_datatable_example_1" class="table table-striped border rounded gy-5 gs-7">
+												<thead>
+													<tr class="fw-bold fs-6 text-gray-800">
+														<th>Name</th>
+														<th>Position</th>
+														<th>Office</th>
+														<th>Age</th>
+														<th>Start date</th>
+														<th>Salary</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Tiger Nixon</td>
+														<td>System Architect</td>
+														<td>Edinburgh</td>
+														<td>61</td>
+														<td>2011/04/25</td>
+														<td>$320,800</td>
+													</tr>
+													<tr>
+														<td>Garrett Winters</td>
+														<td>Accountant</td>
+														<td>Tokyo</td>
+														<td>63</td>
+														<td>2011/07/25</td>
+														<td>$170,750</td>
+													</tr>
+													<tr>
+														<td>Ashton Cox</td>
+														<td>Junior Technical Author</td>
+														<td>San Francisco</td>
+														<td>66</td>
+														<td>2009/01/12</td>
+														<td>$86,000</td>
+													</tr>
+													<tr>
+														<td>Cedric Kelly</td>
+														<td>Senior Javascript Developer</td>
+														<td>Edinburgh</td>
+														<td>22</td>
+														<td>2012/03/29</td>
+														<td>$433,060</td>
+													</tr>
+													<tr>
+														<td>Airi Satou</td>
+														<td>Accountant</td>
+														<td>Tokyo</td>
+														<td>33</td>
+														<td>2008/11/28</td>
+														<td>$162,700</td>
+													</tr>
+													<tr>
+														<td>Brielle Williamson</td>
+														<td>Integration Specialist</td>
+														<td>New York</td>
+														<td>61</td>
+														<td>2012/12/02</td>
+														<td>$372,000</td>
+													</tr>
+													<tr>
+														<td>Herrod Chandler</td>
+														<td>Sales Assistant</td>
+														<td>San Francisco</td>
+														<td>59</td>
+														<td>2012/08/06</td>
+														<td>$137,500</td>
+													</tr>
+													<tr>
+														<td>Rhona Davidson</td>
+														<td>Integration Specialist</td>
+														<td>Tokyo</td>
+														<td>55</td>
+														<td>2010/10/14</td>
+														<td>$327,900</td>
+													</tr>
+													<tr>
+														<td>Colleen Hurst</td>
+														<td>Javascript Developer</td>
+														<td>San Francisco</td>
+														<td>39</td>
+														<td>2009/09/15</td>
+														<td>$205,500</td>
+													</tr>
+													<tr>
+														<td>Sonya Frost</td>
+														<td>Software Engineer</td>
+														<td>Edinburgh</td>
+														<td>23</td>
+														<td>2008/12/13</td>
+														<td>$103,600</td>
+													</tr>
+													<tr>
+														<td>Jena Gaines</td>
+														<td>Office Manager</td>
+														<td>London</td>
+														<td>30</td>
+														<td>2008/12/19</td>
+														<td>$90,560</td>
+													</tr>
+													<tr>
+														<td>Quinn Flynn</td>
+														<td>Support Lead</td>
+														<td>Edinburgh</td>
+														<td>22</td>
+														<td>2013/03/03</td>
+														<td>$342,000</td>
+													</tr>
+													<tr>
+														<td>Charde Marshall</td>
+														<td>Regional Director</td>
+														<td>San Francisco</td>
+														<td>36</td>
+														<td>2008/10/16</td>
+														<td>$470,600</td>
+													</tr>
+													<tr>
+														<td>Haley Kennedy</td>
+														<td>Senior Marketing Designer</td>
+														<td>London</td>
+														<td>43</td>
+														<td>2012/12/18</td>
+														<td>$313,500</td>
+													</tr>
+													<tr>
+														<td>Tatyana Fitzpatrick</td>
+														<td>Regional Director</td>
+														<td>London</td>
+														<td>19</td>
+														<td>2010/03/17</td>
+														<td>$385,750</td>
+													</tr>
+													<tr>
+														<td>Michael Silva</td>
+														<td>Marketing Designer</td>
+														<td>London</td>
+														<td>66</td>
+														<td>2012/11/27</td>
+														<td>$198,500</td>
+													</tr>
+													<tr>
+														<td>Paul Byrd</td>
+														<td>Chief Financial Officer (CFO)</td>
+														<td>New York</td>
+														<td>64</td>
+														<td>2010/06/09</td>
+														<td>$725,000</td>
+													</tr>
+													<tr>
+														<td>Gloria Little</td>
+														<td>Systems Administrator</td>
+														<td>New York</td>
+														<td>59</td>
+														<td>2009/04/10</td>
+														<td>$237,500</td>
+													</tr>
+													<tr>
+														<td>Bradley Greer</td>
+														<td>Software Engineer</td>
+														<td>London</td>
+														<td>41</td>
+														<td>2012/10/13</td>
+														<td>$132,000</td>
+													</tr>
+													<tr>
+														<td>Dai Rios</td>
+														<td>Personnel Lead</td>
+														<td>Edinburgh</td>
+														<td>35</td>
+														<td>2012/09/26</td>
+														<td>$217,500</td>
+													</tr>
+													<tr>
+														<td>Jenette Caldwell</td>
+														<td>Development Lead</td>
+														<td>New York</td>
+														<td>30</td>
+														<td>2011/09/03</td>
+														<td>$345,000</td>
+													</tr>
+													<tr>
+														<td>Yuri Berry</td>
+														<td>Chief Marketing Officer (CMO)</td>
+														<td>New York</td>
+														<td>40</td>
+														<td>2009/06/25</td>
+														<td>$675,000</td>
+													</tr>
+													<tr>
+														<td>Caesar Vance</td>
+														<td>Pre-Sales Support</td>
+														<td>New York</td>
+														<td>21</td>
+														<td>2011/12/12</td>
+														<td>$106,450</td>
+													</tr>
+													<tr>
+														<td>Doris Wilder</td>
+														<td>Sales Assistant</td>
+														<td>Sydney</td>
+														<td>23</td>
+														<td>2010/09/20</td>
+														<td>$85,600</td>
+													</tr>
+													<tr>
+														<td>Angelica Ramos</td>
+														<td>Chief Executive Officer (CEO)</td>
+														<td>London</td>
+														<td>47</td>
+														<td>2009/10/09</td>
+														<td>$1,200,000</td>
+													</tr>
+													<tr>
+														<td>Gavin Joyce</td>
+														<td>Developer</td>
+														<td>Edinburgh</td>
+														<td>42</td>
+														<td>2010/12/22</td>
+														<td>$92,575</td>
+													</tr>
+													<tr>
+														<td>Jennifer Chang</td>
+														<td>Regional Director</td>
+														<td>Singapore</td>
+														<td>28</td>
+														<td>2010/11/14</td>
+														<td>$357,650</td>
+													</tr>
+													<tr>
+														<td>Brenden Wagner</td>
+														<td>Software Engineer</td>
+														<td>San Francisco</td>
+														<td>28</td>
+														<td>2011/06/07</td>
+														<td>$206,850</td>
+													</tr>
+													<tr>
+														<td>Fiona Green</td>
+														<td>Chief Operating Officer (COO)</td>
+														<td>San Francisco</td>
+														<td>48</td>
+														<td>2010/03/11</td>
+														<td>$850,000</td>
+													</tr>
+													<tr>
+														<td>Shou Itou</td>
+														<td>Regional Marketing</td>
+														<td>Tokyo</td>
+														<td>20</td>
+														<td>2011/08/14</td>
+														<td>$163,000</td>
+													</tr>
+													<tr>
+														<td>Michelle House</td>
+														<td>Integration Specialist</td>
+														<td>Sydney</td>
+														<td>37</td>
+														<td>2011/06/02</td>
+														<td>$95,400</td>
+													</tr>
+													<tr>
+														<td>Suki Burks</td>
+														<td>Developer</td>
+														<td>London</td>
+														<td>53</td>
+														<td>2009/10/22</td>
+														<td>$114,500</td>
+													</tr>
+													<tr>
+														<td>Prescott Bartlett</td>
+														<td>Technical Author</td>
+														<td>London</td>
+														<td>27</td>
+														<td>2011/05/07</td>
+														<td>$145,000</td>
+													</tr>
+													<tr>
+														<td>Gavin Cortez</td>
+														<td>Team Leader</td>
+														<td>San Francisco</td>
+														<td>22</td>
+														<td>2008/10/26</td>
+														<td>$235,500</td>
+													</tr>
+													<tr>
+														<td>Martena Mccray</td>
+														<td>Post-Sales support</td>
+														<td>Edinburgh</td>
+														<td>46</td>
+														<td>2011/03/09</td>
+														<td>$324,050</td>
+													</tr>
+													<tr>
+														<td>Unity Butler</td>
+														<td>Marketing Designer</td>
+														<td>San Francisco</td>
+														<td>47</td>
+														<td>2009/12/09</td>
+														<td>$85,675</td>
+													</tr>
+													<tr>
+														<td>Howard Hatfield</td>
+														<td>Office Manager</td>
+														<td>San Francisco</td>
+														<td>51</td>
+														<td>2008/12/16</td>
+														<td>$164,500</td>
+													</tr>
+													<tr>
+														<td>Hope Fuentes</td>
+														<td>Secretary</td>
+														<td>San Francisco</td>
+														<td>41</td>
+														<td>2010/02/12</td>
+														<td>$109,850</td>
+													</tr>
+													<tr>
+														<td>Vivian Harrell</td>
+														<td>Financial Controller</td>
+														<td>San Francisco</td>
+														<td>62</td>
+														<td>2009/02/14</td>
+														<td>$452,500</td>
+													</tr>
+													<tr>
+														<td>Timothy Mooney</td>
+														<td>Office Manager</td>
+														<td>London</td>
+														<td>37</td>
+														<td>2008/12/11</td>
+														<td>$136,200</td>
+													</tr>
+													<tr>
+														<td>Jackson Bradshaw</td>
+														<td>Director</td>
+														<td>New York</td>
+														<td>65</td>
+														<td>2008/09/26</td>
+														<td>$645,750</td>
+													</tr>
+													<tr>
+														<td>Olivia Liang</td>
+														<td>Support Engineer</td>
+														<td>Singapore</td>
+														<td>64</td>
+														<td>2011/02/03</td>
+														<td>$234,500</td>
+													</tr>
+													<tr>
+														<td>Bruno Nash</td>
+														<td>Software Engineer</td>
+														<td>London</td>
+														<td>38</td>
+														<td>2011/05/03</td>
+														<td>$163,500</td>
+													</tr>
+													<tr>
+														<td>Sakura Yamamoto</td>
+														<td>Support Engineer</td>
+														<td>Tokyo</td>
+														<td>37</td>
+														<td>2009/08/19</td>
+														<td>$139,575</td>
+													</tr>
+													<tr>
+														<td>Thor Walton</td>
+														<td>Developer</td>
+														<td>New York</td>
+														<td>61</td>
+														<td>2013/08/11</td>
+														<td>$98,540</td>
+													</tr>
+													<tr>
+														<td>Finn Camacho</td>
+														<td>Support Engineer</td>
+														<td>San Francisco</td>
+														<td>47</td>
+														<td>2009/07/07</td>
+														<td>$87,500</td>
+													</tr>
+													<tr>
+														<td>Serge Baldwin</td>
+														<td>Data Coordinator</td>
+														<td>Singapore</td>
+														<td>64</td>
+														<td>2012/04/09</td>
+														<td>$138,575</td>
+													</tr>
+													<tr>
+														<td>Zenaida Frank</td>
+														<td>Software Engineer</td>
+														<td>New York</td>
+														<td>63</td>
+														<td>2010/01/04</td>
+														<td>$125,250</td>
+													</tr>
+													<tr>
+														<td>Zorita Serrano</td>
+														<td>Software Engineer</td>
+														<td>San Francisco</td>
+														<td>56</td>
+														<td>2012/06/01</td>
+														<td>$115,000</td>
+													</tr>
+													<tr>
+														<td>Jennifer Acosta</td>
+														<td>Junior Javascript Developer</td>
+														<td>Edinburgh</td>
+														<td>43</td>
+														<td>2013/02/01</td>
+														<td>$75,650</td>
+													</tr>
+													<tr>
+														<td>Cara Stevens</td>
+														<td>Sales Assistant</td>
+														<td>New York</td>
+														<td>46</td>
+														<td>2011/12/06</td>
+														<td>$145,600</td>
+													</tr>
+													<tr>
+														<td>Hermione Butler</td>
+														<td>Regional Director</td>
+														<td>London</td>
+														<td>47</td>
+														<td>2011/03/21</td>
+														<td>$356,250</td>
+													</tr>
+													<tr>
+														<td>Lael Greer</td>
+														<td>Systems Administrator</td>
+														<td>London</td>
+														<td>21</td>
+														<td>2009/02/27</td>
+														<td>$103,500</td>
+													</tr>
+													<tr>
+														<td>Jonas Alexander</td>
+														<td>Developer</td>
+														<td>San Francisco</td>
+														<td>30</td>
+														<td>2010/07/14</td>
+														<td>$86,500</td>
+													</tr>
+													<tr>
+														<td>Shad Decker</td>
+														<td>Regional Director</td>
+														<td>Edinburgh</td>
+														<td>51</td>
+														<td>2008/11/13</td>
+														<td>$183,000</td>
+													</tr>
+													<tr>
+														<td>Michael Bruce</td>
+														<td>Javascript Developer</td>
+														<td>Singapore</td>
+														<td>29</td>
+														<td>2011/06/27</td>
+														<td>$183,000</td>
+													</tr>
+													<tr>
+														<td>Donna Snider</td>
+														<td>Customer Support</td>
+														<td>New York</td>
+														<td>27</td>
+														<td>2011/01/25</td>
+														<td>$112,000</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!--end::Block-->
+										<!--begin::Code-->
+										<div class="py-5">
+											<!--begin::Highlight-->
+											<div class="highlight">
+												<button class="highlight-copy btn" data-bs-toggle="tooltip" title="Copy code">copy</button>
+												<ul class="nav nav-pills" role="tablist">
+													<li class="nav-item">
+														<a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_6105890dd747d" role="tab">HTML</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_6105890dd7481" role="tab">JAVASCRIPT</a>
+													</li>
+												</ul>
+												<div class="tab-content">
+													<div class="tab-pane fade show active" id="kt_highlight_6105890dd747d" role="tabpanel">
+														<div class="highlight-code">
+															<pre class="language-html" style="height:400px">
+<code class="language-html">&lt;table id="kt_datatable_example_1" class="table table-striped table-row-bordered gy-5 gs-7"&gt;
+    &lt;thead&gt;
+        &lt;tr class="fw-bold fs-6 text-gray-800"&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Position&lt;/th&gt;
+            &lt;th&gt;Office&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;Start date&lt;/th&gt;
+            &lt;th&gt;Salary&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Tiger Nixon&lt;/td&gt;
+            &lt;td&gt;System Architect&lt;/td&gt;
+            &lt;td&gt;Edinburgh&lt;/td&gt;
+            &lt;td&gt;61&lt;/td&gt;
+            &lt;td&gt;2011/04/25&lt;/td&gt;
+            &lt;td&gt;$320,800&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Garrett Winters&lt;/td&gt;
+            &lt;td&gt;Accountant&lt;/td&gt;
+            &lt;td&gt;Tokyo&lt;/td&gt;
+            &lt;td&gt;63&lt;/td&gt;
+            &lt;td&gt;2011/07/25&lt;/td&gt;
+            &lt;td&gt;$170,750&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code>
+</pre>
+														</div>
+													</div>
+													<div class="tab-pane fade" id="kt_highlight_6105890dd7481" role="tabpanel">
+														<div class="highlight-code">
+															<pre class="language-javascript">
+<code class="language-javascript">var status = {
+    1: {"title": "Pending", "state": "primary"},
+    2: {"title": "Delivered", "state": "danger"},
+    3: {"title": "Canceled", "state": "primary"},
+    4: {"title": "Success", "state": "success"},
+    5: {"title": "Info", "state": "info"},
+    6: {"title": "Danger", "state": "danger"},
+    7: {"title": "Warning", "state": "warning"},
+   };
+ 
+   $("#kt_datatable_example_1").DataTable({
+    "columnDefs": [
+     {
+      // The `data` parameter refers to the data for the cell (defined by the
+      // `data` option, which defaults to the column being worked with, in
+      // this case `data: 0`.
+      "render": function ( data, type, row ) {
+       var index = KTUtil.getRandomInt(1, 7);
+ 
+       return data + '&lt;span class="ms-2 badge badge-light-' + status[index]['state'] + ' fw-bold"&gt;' + status[index]['title'] + '&lt;/span&gt;';
+      },
+      "targets": 1
+     }
+    ]
+   });</code>
+</pre>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end::Highlight-->
+										</div>
+										<!--end::Code-->
+									</div>
+									<!--end::Section-->
+									<!--begin::Section-->
+									<div class="py-10">
+										<!--begin::Heading-->
+										<h1 class="anchor fw-bolder mb-5" id="complex-header">
+										<a href="#complex-header"></a>Complex Header</h1>
+										<!--end::Heading-->
+										<!--begin::Block-->
+										<div class="py-5">This example shows multiple layers of heading rows. This technique can be useful for large scale data types that requires a single title heading to be split into multiple columns for better data readability.</div>
+										<!--end::Block-->
+										<!--begin::Block-->
+										<div class="my-5">
+											<table id="kt_datatable_example_2" class="table table-striped table-row-bordered gy-5 gs-7 border rounded w-100">
+												<thead>
+													<tr class="fw-bolder fs-6 text-gray-800 px-7">
+														<th rowspan="2" class="align-middle border-bottom border-end w-200px">Name</th>
+														<th colspan="2" class="border-bottom">HR Information</th>
+														<th colspan="3" class="border-bottom">Contact</th>
+													</tr>
+													<tr class="fw-bolder fs-6 text-gray-800 px-7">
+														<th class="ps-2">Position</th>
+														<th>Salary</th>
+														<th>Office</th>
+														<th>Extn.</th>
+														<th>E-mail</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Tiger Nixon</td>
+														<td>System Architect</td>
+														<td>Edinburgh</td>
+														<td>61</td>
+														<td>2011/04/25</td>
+														<td>$320,800</td>
+													</tr>
+													<tr>
+														<td>Garrett Winters</td>
+														<td>Accountant</td>
+														<td>Tokyo</td>
+														<td>63</td>
+														<td>2011/07/25</td>
+														<td>$170,750</td>
+													</tr>
+													<tr>
+														<td>Ashton Cox</td>
+														<td>Junior Technical Author</td>
+														<td>San Francisco</td>
+														<td>66</td>
+														<td>2009/01/12</td>
+														<td>$86,000</td>
+													</tr>
+													<tr>
+														<td>Cedric Kelly</td>
+														<td>Senior Javascript Developer</td>
+														<td>Edinburgh</td>
+														<td>22</td>
+														<td>2012/03/29</td>
+														<td>$433,060</td>
+													</tr>
+													<tr>
+														<td>Airi Satou</td>
+														<td>Accountant</td>
+														<td>Tokyo</td>
+														<td>33</td>
+														<td>2008/11/28</td>
+														<td>$162,700</td>
+													</tr>
+													<tr>
+														<td>Brielle Williamson</td>
+														<td>Integration Specialist</td>
+														<td>New York</td>
+														<td>61</td>
+														<td>2012/12/02</td>
+														<td>$372,000</td>
+													</tr>
+													<tr>
+														<td>Herrod Chandler</td>
+														<td>Sales Assistant</td>
+														<td>San Francisco</td>
+														<td>59</td>
+														<td>2012/08/06</td>
+														<td>$137,500</td>
+													</tr>
+													<tr>
+														<td>Rhona Davidson</td>
+														<td>Integration Specialist</td>
+														<td>Tokyo</td>
+														<td>55</td>
+														<td>2010/10/14</td>
+														<td>$327,900</td>
+													</tr>
+													<tr>
+														<td>Colleen Hurst</td>
+														<td>Javascript Developer</td>
+														<td>San Francisco</td>
+														<td>39</td>
+														<td>2009/09/15</td>
+														<td>$205,500</td>
+													</tr>
+													<tr>
+														<td>Sonya Frost</td>
+														<td>Software Engineer</td>
+														<td>Edinburgh</td>
+														<td>23</td>
+														<td>2008/12/13</td>
+														<td>$103,600</td>
+													</tr>
+													<tr>
+														<td>Jena Gaines</td>
+														<td>Office Manager</td>
+														<td>London</td>
+														<td>30</td>
+														<td>2008/12/19</td>
+														<td>$90,560</td>
+													</tr>
+													<tr>
+														<td>Quinn Flynn</td>
+														<td>Support Lead</td>
+														<td>Edinburgh</td>
+														<td>22</td>
+														<td>2013/03/03</td>
+														<td>$342,000</td>
+													</tr>
+													<tr>
+														<td>Charde Marshall</td>
+														<td>Regional Director</td>
+														<td>San Francisco</td>
+														<td>36</td>
+														<td>2008/10/16</td>
+														<td>$470,600</td>
+													</tr>
+													<tr>
+														<td>Haley Kennedy</td>
+														<td>Senior Marketing Designer</td>
+														<td>London</td>
+														<td>43</td>
+														<td>2012/12/18</td>
+														<td>$313,500</td>
+													</tr>
+													<tr>
+														<td>Tatyana Fitzpatrick</td>
+														<td>Regional Director</td>
+														<td>London</td>
+														<td>19</td>
+														<td>2010/03/17</td>
+														<td>$385,750</td>
+													</tr>
+													<tr>
+														<td>Michael Silva</td>
+														<td>Marketing Designer</td>
+														<td>London</td>
+														<td>66</td>
+														<td>2012/11/27</td>
+														<td>$198,500</td>
+													</tr>
+													<tr>
+														<td>Paul Byrd</td>
+														<td>Chief Financial Officer (CFO)</td>
+														<td>New York</td>
+														<td>64</td>
+														<td>2010/06/09</td>
+														<td>$725,000</td>
+													</tr>
+													<tr>
+														<td>Gloria Little</td>
+														<td>Systems Administrator</td>
+														<td>New York</td>
+														<td>59</td>
+														<td>2009/04/10</td>
+														<td>$237,500</td>
+													</tr>
+													<tr>
+														<td>Bradley Greer</td>
+														<td>Software Engineer</td>
+														<td>London</td>
+														<td>41</td>
+														<td>2012/10/13</td>
+														<td>$132,000</td>
+													</tr>
+													<tr>
+														<td>Dai Rios</td>
+														<td>Personnel Lead</td>
+														<td>Edinburgh</td>
+														<td>35</td>
+														<td>2012/09/26</td>
+														<td>$217,500</td>
+													</tr>
+													<tr>
+														<td>Jenette Caldwell</td>
+														<td>Development Lead</td>
+														<td>New York</td>
+														<td>30</td>
+														<td>2011/09/03</td>
+														<td>$345,000</td>
+													</tr>
+													<tr>
+														<td>Yuri Berry</td>
+														<td>Chief Marketing Officer (CMO)</td>
+														<td>New York</td>
+														<td>40</td>
+														<td>2009/06/25</td>
+														<td>$675,000</td>
+													</tr>
+													<tr>
+														<td>Caesar Vance</td>
+														<td>Pre-Sales Support</td>
+														<td>New York</td>
+														<td>21</td>
+														<td>2011/12/12</td>
+														<td>$106,450</td>
+													</tr>
+													<tr>
+														<td>Doris Wilder</td>
+														<td>Sales Assistant</td>
+														<td>Sydney</td>
+														<td>23</td>
+														<td>2010/09/20</td>
+														<td>$85,600</td>
+													</tr>
+													<tr>
+														<td>Angelica Ramos</td>
+														<td>Chief Executive Officer (CEO)</td>
+														<td>London</td>
+														<td>47</td>
+														<td>2009/10/09</td>
+														<td>$1,200,000</td>
+													</tr>
+													<tr>
+														<td>Gavin Joyce</td>
+														<td>Developer</td>
+														<td>Edinburgh</td>
+														<td>42</td>
+														<td>2010/12/22</td>
+														<td>$92,575</td>
+													</tr>
+													<tr>
+														<td>Jennifer Chang</td>
+														<td>Regional Director</td>
+														<td>Singapore</td>
+														<td>28</td>
+														<td>2010/11/14</td>
+														<td>$357,650</td>
+													</tr>
+													<tr>
+														<td>Brenden Wagner</td>
+														<td>Software Engineer</td>
+														<td>San Francisco</td>
+														<td>28</td>
+														<td>2011/06/07</td>
+														<td>$206,850</td>
+													</tr>
+													<tr>
+														<td>Fiona Green</td>
+														<td>Chief Operating Officer (COO)</td>
+														<td>San Francisco</td>
+														<td>48</td>
+														<td>2010/03/11</td>
+														<td>$850,000</td>
+													</tr>
+													<tr>
+														<td>Shou Itou</td>
+														<td>Regional Marketing</td>
+														<td>Tokyo</td>
+														<td>20</td>
+														<td>2011/08/14</td>
+														<td>$163,000</td>
+													</tr>
+													<tr>
+														<td>Michelle House</td>
+														<td>Integration Specialist</td>
+														<td>Sydney</td>
+														<td>37</td>
+														<td>2011/06/02</td>
+														<td>$95,400</td>
+													</tr>
+													<tr>
+														<td>Suki Burks</td>
+														<td>Developer</td>
+														<td>London</td>
+														<td>53</td>
+														<td>2009/10/22</td>
+														<td>$114,500</td>
+													</tr>
+													<tr>
+														<td>Prescott Bartlett</td>
+														<td>Technical Author</td>
+														<td>London</td>
+														<td>27</td>
+														<td>2011/05/07</td>
+														<td>$145,000</td>
+													</tr>
+													<tr>
+														<td>Gavin Cortez</td>
+														<td>Team Leader</td>
+														<td>San Francisco</td>
+														<td>22</td>
+														<td>2008/10/26</td>
+														<td>$235,500</td>
+													</tr>
+													<tr>
+														<td>Martena Mccray</td>
+														<td>Post-Sales support</td>
+														<td>Edinburgh</td>
+														<td>46</td>
+														<td>2011/03/09</td>
+														<td>$324,050</td>
+													</tr>
+													<tr>
+														<td>Unity Butler</td>
+														<td>Marketing Designer</td>
+														<td>San Francisco</td>
+														<td>47</td>
+														<td>2009/12/09</td>
+														<td>$85,675</td>
+													</tr>
+													<tr>
+														<td>Howard Hatfield</td>
+														<td>Office Manager</td>
+														<td>San Francisco</td>
+														<td>51</td>
+														<td>2008/12/16</td>
+														<td>$164,500</td>
+													</tr>
+													<tr>
+														<td>Hope Fuentes</td>
+														<td>Secretary</td>
+														<td>San Francisco</td>
+														<td>41</td>
+														<td>2010/02/12</td>
+														<td>$109,850</td>
+													</tr>
+													<tr>
+														<td>Vivian Harrell</td>
+														<td>Financial Controller</td>
+														<td>San Francisco</td>
+														<td>62</td>
+														<td>2009/02/14</td>
+														<td>$452,500</td>
+													</tr>
+													<tr>
+														<td>Timothy Mooney</td>
+														<td>Office Manager</td>
+														<td>London</td>
+														<td>37</td>
+														<td>2008/12/11</td>
+														<td>$136,200</td>
+													</tr>
+													<tr>
+														<td>Jackson Bradshaw</td>
+														<td>Director</td>
+														<td>New York</td>
+														<td>65</td>
+														<td>2008/09/26</td>
+														<td>$645,750</td>
+													</tr>
+													<tr>
+														<td>Olivia Liang</td>
+														<td>Support Engineer</td>
+														<td>Singapore</td>
+														<td>64</td>
+														<td>2011/02/03</td>
+														<td>$234,500</td>
+													</tr>
+													<tr>
+														<td>Bruno Nash</td>
+														<td>Software Engineer</td>
+														<td>London</td>
+														<td>38</td>
+														<td>2011/05/03</td>
+														<td>$163,500</td>
+													</tr>
+													<tr>
+														<td>Sakura Yamamoto</td>
+														<td>Support Engineer</td>
+														<td>Tokyo</td>
+														<td>37</td>
+														<td>2009/08/19</td>
+														<td>$139,575</td>
+													</tr>
+													<tr>
+														<td>Thor Walton</td>
+														<td>Developer</td>
+														<td>New York</td>
+														<td>61</td>
+														<td>2013/08/11</td>
+														<td>$98,540</td>
+													</tr>
+													<tr>
+														<td>Finn Camacho</td>
+														<td>Support Engineer</td>
+														<td>San Francisco</td>
+														<td>47</td>
+														<td>2009/07/07</td>
+														<td>$87,500</td>
+													</tr>
+													<tr>
+														<td>Serge Baldwin</td>
+														<td>Data Coordinator</td>
+														<td>Singapore</td>
+														<td>64</td>
+														<td>2012/04/09</td>
+														<td>$138,575</td>
+													</tr>
+													<tr>
+														<td>Zenaida Frank</td>
+														<td>Software Engineer</td>
+														<td>New York</td>
+														<td>63</td>
+														<td>2010/01/04</td>
+														<td>$125,250</td>
+													</tr>
+													<tr>
+														<td>Zorita Serrano</td>
+														<td>Software Engineer</td>
+														<td>San Francisco</td>
+														<td>56</td>
+														<td>2012/06/01</td>
+														<td>$115,000</td>
+													</tr>
+													<tr>
+														<td>Jennifer Acosta</td>
+														<td>Junior Javascript Developer</td>
+														<td>Edinburgh</td>
+														<td>43</td>
+														<td>2013/02/01</td>
+														<td>$75,650</td>
+													</tr>
+													<tr>
+														<td>Cara Stevens</td>
+														<td>Sales Assistant</td>
+														<td>New York</td>
+														<td>46</td>
+														<td>2011/12/06</td>
+														<td>$145,600</td>
+													</tr>
+													<tr>
+														<td>Hermione Butler</td>
+														<td>Regional Director</td>
+														<td>London</td>
+														<td>47</td>
+														<td>2011/03/21</td>
+														<td>$356,250</td>
+													</tr>
+													<tr>
+														<td>Lael Greer</td>
+														<td>Systems Administrator</td>
+														<td>London</td>
+														<td>21</td>
+														<td>2009/02/27</td>
+														<td>$103,500</td>
+													</tr>
+													<tr>
+														<td>Jonas Alexander</td>
+														<td>Developer</td>
+														<td>San Francisco</td>
+														<td>30</td>
+														<td>2010/07/14</td>
+														<td>$86,500</td>
+													</tr>
+													<tr>
+														<td>Shad Decker</td>
+														<td>Regional Director</td>
+														<td>Edinburgh</td>
+														<td>51</td>
+														<td>2008/11/13</td>
+														<td>$183,000</td>
+													</tr>
+													<tr>
+														<td>Michael Bruce</td>
+														<td>Javascript Developer</td>
+														<td>Singapore</td>
+														<td>29</td>
+														<td>2011/06/27</td>
+														<td>$183,000</td>
+													</tr>
+													<tr>
+														<td>Donna Snider</td>
+														<td>Customer Support</td>
+														<td>New York</td>
+														<td>27</td>
+														<td>2011/01/25</td>
+														<td>$112,000</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!--end::Block-->
+										<!--begin::Code-->
+										<div class="py-5">
+											<!--begin::Highlight-->
+											<div class="highlight">
+												<button class="highlight-copy btn" data-bs-toggle="tooltip" title="Copy code">copy</button>
+												<ul class="nav nav-pills" role="tablist">
+													<li class="nav-item">
+														<a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_6105890dd74b6" role="tab">HTML</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_6105890dd74b8" role="tab">JAVASCRIPT</a>
+													</li>
+												</ul>
+												<div class="tab-content">
+													<div class="tab-pane fade show active" id="kt_highlight_6105890dd74b6" role="tabpanel">
+														<div class="highlight-code">
+															<pre class="language-html" style="height:400px">
+<code class="language-html">&lt;table id="kt_datatable_example_2" class="table table-striped table-row-bordered gy-5 gs-7 border rounded w-100"&gt;
+    &lt;thead&gt;
+        &lt;tr class="fw-bolder fs-6 text-gray-800 px-7"&gt;
+            &lt;th rowspan="2" class="align-middle border-bottom border-end w-200px"&gt;Name&lt;/th&gt;
+            &lt;th colspan="2" class="border-bottom"&gt;HR Information&lt;/th&gt;
+            &lt;th colspan="3" class="border-bottom"&gt;Contact&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr class="fw-bolder fs-6 text-gray-800 px-7"&gt;
+            &lt;th class="ps-2"&gt;Position&lt;/th&gt;
+            &lt;th&gt;Salary&lt;/th&gt;
+            &lt;th&gt;Office&lt;/th&gt;
+            &lt;th&gt;Extn.&lt;/th&gt;
+            &lt;th&gt;E-mail&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Tiger Nixon&lt;/td&gt;
+            &lt;td&gt;System Architect&lt;/td&gt;
+            &lt;td&gt;Edinburgh&lt;/td&gt;
+            &lt;td&gt;61&lt;/td&gt;
+            &lt;td&gt;2011/04/25&lt;/td&gt;
+            &lt;td&gt;$320,800&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Garrett Winters&lt;/td&gt;
+            &lt;td&gt;Accountant&lt;/td&gt;
+            &lt;td&gt;Tokyo&lt;/td&gt;
+            &lt;td&gt;63&lt;/td&gt;
+            &lt;td&gt;2011/07/25&lt;/td&gt;
+            &lt;td&gt;$170,750&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code>
+</pre>
+														</div>
+													</div>
+													<div class="tab-pane fade" id="kt_highlight_6105890dd74b8" role="tabpanel">
+														<div class="highlight-code">
+															<pre class="language-javascript">
+<code class="language-javascript">$("#kt_datatable_example_2").DataTable({
+    "columnDefs": [{
+        "visible": false,
+        "targets": -1
+    }]
+});</code>
+</pre>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end::Highlight-->
+										</div>
+										<!--end::Code-->
+									</div>
+									<!--end::Section-->
+									<!--begin::Section-->
+									<div class="py-10">
+										<!--begin::Heading-->
+										<h1 class="anchor fw-bolder mb-5" id="row-grouping">
+										<a href="#row-grouping"></a>Row Grouping</h1>
+										<!--end::Heading-->
+										<!--begin::Block-->
+										<div class="py-5">In the example below the 'group' is the office location, which is based on the information in the third column (which is set to hidden).</div>
+										<!--end::Block-->
+										<!--begin::Block-->
+										<div class="my-5">
+											<table id="kt_datatable_example_3" class="table table-striped gy-5 gs-7 border rounded w-100">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Position</th>
+														<th>Office</th>
+														<th>Age</th>
+														<th>Start date</th>
+														<th>Salary</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Tiger Nixon</td>
+														<td>System Architect</td>
+														<td>Edinburgh</td>
+														<td>61</td>
+														<td>2011/04/25</td>
+														<td>$320,800</td>
+													</tr>
+													<tr>
+														<td>Garrett Winters</td>
+														<td>Accountant</td>
+														<td>Tokyo</td>
+														<td>63</td>
+														<td>2011/07/25</td>
+														<td>$170,750</td>
+													</tr>
+													<tr>
+														<td>Ashton Cox</td>
+														<td>Junior Technical Author</td>
+														<td>San Francisco</td>
+														<td>66</td>
+														<td>2009/01/12</td>
+														<td>$86,000</td>
+													</tr>
+													<tr>
+														<td>Cedric Kelly</td>
+														<td>Senior Javascript Developer</td>
+														<td>Edinburgh</td>
+														<td>22</td>
+														<td>2012/03/29</td>
+														<td>$433,060</td>
+													</tr>
+													<tr>
+														<td>Airi Satou</td>
+														<td>Accountant</td>
+														<td>Tokyo</td>
+														<td>33</td>
+														<td>2008/11/28</td>
+														<td>$162,700</td>
+													</tr>
+													<tr>
+														<td>Brielle Williamson</td>
+														<td>Integration Specialist</td>
+														<td>New York</td>
+														<td>61</td>
+														<td>2012/12/02</td>
+														<td>$372,000</td>
+													</tr>
+													<tr>
+														<td>Herrod Chandler</td>
+														<td>Sales Assistant</td>
+														<td>San Francisco</td>
+														<td>59</td>
+														<td>2012/08/06</td>
+														<td>$137,500</td>
+													</tr>
+													<tr>
+														<td>Rhona Davidson</td>
+														<td>Integration Specialist</td>
+														<td>Tokyo</td>
+														<td>55</td>
+														<td>2010/10/14</td>
+														<td>$327,900</td>
+													</tr>
+													<tr>
+														<td>Colleen Hurst</td>
+														<td>Javascript Developer</td>
+														<td>San Francisco</td>
+														<td>39</td>
+														<td>2009/09/15</td>
+														<td>$205,500</td>
+													</tr>
+													<tr>
+														<td>Sonya Frost</td>
+														<td>Software Engineer</td>
+														<td>Edinburgh</td>
+														<td>23</td>
+														<td>2008/12/13</td>
+														<td>$103,600</td>
+													</tr>
+													<tr>
+														<td>Jena Gaines</td>
+														<td>Office Manager</td>
+														<td>London</td>
+														<td>30</td>
+														<td>2008/12/19</td>
+														<td>$90,560</td>
+													</tr>
+													<tr>
+														<td>Quinn Flynn</td>
+														<td>Support Lead</td>
+														<td>Edinburgh</td>
+														<td>22</td>
+														<td>2013/03/03</td>
+														<td>$342,000</td>
+													</tr>
+													<tr>
+														<td>Charde Marshall</td>
+														<td>Regional Director</td>
+														<td>San Francisco</td>
+														<td>36</td>
+														<td>2008/10/16</td>
+														<td>$470,600</td>
+													</tr>
+													<tr>
+														<td>Haley Kennedy</td>
+														<td>Senior Marketing Designer</td>
+														<td>London</td>
+														<td>43</td>
+														<td>2012/12/18</td>
+														<td>$313,500</td>
+													</tr>
+													<tr>
+														<td>Tatyana Fitzpatrick</td>
+														<td>Regional Director</td>
+														<td>London</td>
+														<td>19</td>
+														<td>2010/03/17</td>
+														<td>$385,750</td>
+													</tr>
+													<tr>
+														<td>Michael Silva</td>
+														<td>Marketing Designer</td>
+														<td>London</td>
+														<td>66</td>
+														<td>2012/11/27</td>
+														<td>$198,500</td>
+													</tr>
+													<tr>
+														<td>Paul Byrd</td>
+														<td>Chief Financial Officer (CFO)</td>
+														<td>New York</td>
+														<td>64</td>
+														<td>2010/06/09</td>
+														<td>$725,000</td>
+													</tr>
+													<tr>
+														<td>Gloria Little</td>
+														<td>Systems Administrator</td>
+														<td>New York</td>
+														<td>59</td>
+														<td>2009/04/10</td>
+														<td>$237,500</td>
+													</tr>
+													<tr>
+														<td>Bradley Greer</td>
+														<td>Software Engineer</td>
+														<td>London</td>
+														<td>41</td>
+														<td>2012/10/13</td>
+														<td>$132,000</td>
+													</tr>
+													<tr>
+														<td>Dai Rios</td>
+														<td>Personnel Lead</td>
+														<td>Edinburgh</td>
+														<td>35</td>
+														<td>2012/09/26</td>
+														<td>$217,500</td>
+													</tr>
+													<tr>
+														<td>Jenette Caldwell</td>
+														<td>Development Lead</td>
+														<td>New York</td>
+														<td>30</td>
+														<td>2011/09/03</td>
+														<td>$345,000</td>
+													</tr>
+													<tr>
+														<td>Yuri Berry</td>
+														<td>Chief Marketing Officer (CMO)</td>
+														<td>New York</td>
+														<td>40</td>
+														<td>2009/06/25</td>
+														<td>$675,000</td>
+													</tr>
+													<tr>
+														<td>Caesar Vance</td>
+														<td>Pre-Sales Support</td>
+														<td>New York</td>
+														<td>21</td>
+														<td>2011/12/12</td>
+														<td>$106,450</td>
+													</tr>
+													<tr>
+														<td>Doris Wilder</td>
+														<td>Sales Assistant</td>
+														<td>Sydney</td>
+														<td>23</td>
+														<td>2010/09/20</td>
+														<td>$85,600</td>
+													</tr>
+													<tr>
+														<td>Angelica Ramos</td>
+														<td>Chief Executive Officer (CEO)</td>
+														<td>London</td>
+														<td>47</td>
+														<td>2009/10/09</td>
+														<td>$1,200,000</td>
+													</tr>
+													<tr>
+														<td>Gavin Joyce</td>
+														<td>Developer</td>
+														<td>Edinburgh</td>
+														<td>42</td>
+														<td>2010/12/22</td>
+														<td>$92,575</td>
+													</tr>
+													<tr>
+														<td>Jennifer Chang</td>
+														<td>Regional Director</td>
+														<td>Singapore</td>
+														<td>28</td>
+														<td>2010/11/14</td>
+														<td>$357,650</td>
+													</tr>
+													<tr>
+														<td>Brenden Wagner</td>
+														<td>Software Engineer</td>
+														<td>San Francisco</td>
+														<td>28</td>
+														<td>2011/06/07</td>
+														<td>$206,850</td>
+													</tr>
+													<tr>
+														<td>Fiona Green</td>
+														<td>Chief Operating Officer (COO)</td>
+														<td>San Francisco</td>
+														<td>48</td>
+														<td>2010/03/11</td>
+														<td>$850,000</td>
+													</tr>
+													<tr>
+														<td>Shou Itou</td>
+														<td>Regional Marketing</td>
+														<td>Tokyo</td>
+														<td>20</td>
+														<td>2011/08/14</td>
+														<td>$163,000</td>
+													</tr>
+													<tr>
+														<td>Michelle House</td>
+														<td>Integration Specialist</td>
+														<td>Sydney</td>
+														<td>37</td>
+														<td>2011/06/02</td>
+														<td>$95,400</td>
+													</tr>
+													<tr>
+														<td>Suki Burks</td>
+														<td>Developer</td>
+														<td>London</td>
+														<td>53</td>
+														<td>2009/10/22</td>
+														<td>$114,500</td>
+													</tr>
+													<tr>
+														<td>Prescott Bartlett</td>
+														<td>Technical Author</td>
+														<td>London</td>
+														<td>27</td>
+														<td>2011/05/07</td>
+														<td>$145,000</td>
+													</tr>
+													<tr>
+														<td>Gavin Cortez</td>
+														<td>Team Leader</td>
+														<td>San Francisco</td>
+														<td>22</td>
+														<td>2008/10/26</td>
+														<td>$235,500</td>
+													</tr>
+													<tr>
+														<td>Martena Mccray</td>
+														<td>Post-Sales support</td>
+														<td>Edinburgh</td>
+														<td>46</td>
+														<td>2011/03/09</td>
+														<td>$324,050</td>
+													</tr>
+													<tr>
+														<td>Unity Butler</td>
+														<td>Marketing Designer</td>
+														<td>San Francisco</td>
+														<td>47</td>
+														<td>2009/12/09</td>
+														<td>$85,675</td>
+													</tr>
+													<tr>
+														<td>Howard Hatfield</td>
+														<td>Office Manager</td>
+														<td>San Francisco</td>
+														<td>51</td>
+														<td>2008/12/16</td>
+														<td>$164,500</td>
+													</tr>
+													<tr>
+														<td>Hope Fuentes</td>
+														<td>Secretary</td>
+														<td>San Francisco</td>
+														<td>41</td>
+														<td>2010/02/12</td>
+														<td>$109,850</td>
+													</tr>
+													<tr>
+														<td>Vivian Harrell</td>
+														<td>Financial Controller</td>
+														<td>San Francisco</td>
+														<td>62</td>
+														<td>2009/02/14</td>
+														<td>$452,500</td>
+													</tr>
+													<tr>
+														<td>Timothy Mooney</td>
+														<td>Office Manager</td>
+														<td>London</td>
+														<td>37</td>
+														<td>2008/12/11</td>
+														<td>$136,200</td>
+													</tr>
+													<tr>
+														<td>Jackson Bradshaw</td>
+														<td>Director</td>
+														<td>New York</td>
+														<td>65</td>
+														<td>2008/09/26</td>
+														<td>$645,750</td>
+													</tr>
+													<tr>
+														<td>Olivia Liang</td>
+														<td>Support Engineer</td>
+														<td>Singapore</td>
+														<td>64</td>
+														<td>2011/02/03</td>
+														<td>$234,500</td>
+													</tr>
+													<tr>
+														<td>Bruno Nash</td>
+														<td>Software Engineer</td>
+														<td>London</td>
+														<td>38</td>
+														<td>2011/05/03</td>
+														<td>$163,500</td>
+													</tr>
+													<tr>
+														<td>Sakura Yamamoto</td>
+														<td>Support Engineer</td>
+														<td>Tokyo</td>
+														<td>37</td>
+														<td>2009/08/19</td>
+														<td>$139,575</td>
+													</tr>
+													<tr>
+														<td>Thor Walton</td>
+														<td>Developer</td>
+														<td>New York</td>
+														<td>61</td>
+														<td>2013/08/11</td>
+														<td>$98,540</td>
+													</tr>
+													<tr>
+														<td>Finn Camacho</td>
+														<td>Support Engineer</td>
+														<td>San Francisco</td>
+														<td>47</td>
+														<td>2009/07/07</td>
+														<td>$87,500</td>
+													</tr>
+													<tr>
+														<td>Serge Baldwin</td>
+														<td>Data Coordinator</td>
+														<td>Singapore</td>
+														<td>64</td>
+														<td>2012/04/09</td>
+														<td>$138,575</td>
+													</tr>
+													<tr>
+														<td>Zenaida Frank</td>
+														<td>Software Engineer</td>
+														<td>New York</td>
+														<td>63</td>
+														<td>2010/01/04</td>
+														<td>$125,250</td>
+													</tr>
+													<tr>
+														<td>Zorita Serrano</td>
+														<td>Software Engineer</td>
+														<td>San Francisco</td>
+														<td>56</td>
+														<td>2012/06/01</td>
+														<td>$115,000</td>
+													</tr>
+													<tr>
+														<td>Jennifer Acosta</td>
+														<td>Junior Javascript Developer</td>
+														<td>Edinburgh</td>
+														<td>43</td>
+														<td>2013/02/01</td>
+														<td>$75,650</td>
+													</tr>
+													<tr>
+														<td>Cara Stevens</td>
+														<td>Sales Assistant</td>
+														<td>New York</td>
+														<td>46</td>
+														<td>2011/12/06</td>
+														<td>$145,600</td>
+													</tr>
+													<tr>
+														<td>Hermione Butler</td>
+														<td>Regional Director</td>
+														<td>London</td>
+														<td>47</td>
+														<td>2011/03/21</td>
+														<td>$356,250</td>
+													</tr>
+													<tr>
+														<td>Lael Greer</td>
+														<td>Systems Administrator</td>
+														<td>London</td>
+														<td>21</td>
+														<td>2009/02/27</td>
+														<td>$103,500</td>
+													</tr>
+													<tr>
+														<td>Jonas Alexander</td>
+														<td>Developer</td>
+														<td>San Francisco</td>
+														<td>30</td>
+														<td>2010/07/14</td>
+														<td>$86,500</td>
+													</tr>
+													<tr>
+														<td>Shad Decker</td>
+														<td>Regional Director</td>
+														<td>Edinburgh</td>
+														<td>51</td>
+														<td>2008/11/13</td>
+														<td>$183,000</td>
+													</tr>
+													<tr>
+														<td>Michael Bruce</td>
+														<td>Javascript Developer</td>
+														<td>Singapore</td>
+														<td>29</td>
+														<td>2011/06/27</td>
+														<td>$183,000</td>
+													</tr>
+													<tr>
+														<td>Donna Snider</td>
+														<td>Customer Support</td>
+														<td>New York</td>
+														<td>27</td>
+														<td>2011/01/25</td>
+														<td>$112,000</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!--end::Block-->
+										<!--begin::Code-->
+										<div class="py-5">
+											<!--begin::Highlight-->
+											<div class="highlight">
+												<button class="highlight-copy btn" data-bs-toggle="tooltip" title="Copy code">copy</button>
+												<ul class="nav nav-pills" role="tablist">
+													<li class="nav-item">
+														<a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_6105890dd74e0" role="tab">HTML</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_6105890dd74e2" role="tab">JAVASCRIPT</a>
+													</li>
+												</ul>
+												<div class="tab-content">
+													<div class="tab-pane fade show active" id="kt_highlight_6105890dd74e0" role="tabpanel">
+														<div class="highlight-code">
+															<pre class="language-html" style="height:400px">
+<code class="language-html">&lt;table id="kt_datatable_example_3" class="table table-striped table-row-bordered gy-5 gs-7 border rounded w-100"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Position&lt;/th&gt;
+            &lt;th&gt;Office&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;Start date&lt;/th&gt;
+            &lt;th&gt;Salary&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Tiger Nixon&lt;/td&gt;
+            &lt;td&gt;System Architect&lt;/td&gt;
+            &lt;td&gt;Edinburgh&lt;/td&gt;
+            &lt;td&gt;61&lt;/td&gt;
+            &lt;td&gt;2011/04/25&lt;/td&gt;
+            &lt;td&gt;$320,800&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Garrett Winters&lt;/td&gt;
+            &lt;td&gt;Accountant&lt;/td&gt;
+            &lt;td&gt;Tokyo&lt;/td&gt;
+            &lt;td&gt;63&lt;/td&gt;
+            &lt;td&gt;2011/07/25&lt;/td&gt;
+            &lt;td&gt;$170,750&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code>
+</pre>
+														</div>
+													</div>
+													<div class="tab-pane fade" id="kt_highlight_6105890dd74e2" role="tabpanel">
+														<div class="highlight-code">
+															<pre class="language-javascript">
+<code class="language-javascript"></code>
+</pre>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end::Highlight-->
+										</div>
+										<!--end::Code-->
+									</div>
+									<!--end::Section-->
+									<!--begin::Section-->
+									<div class="py-10">
+										<!--begin::Heading-->
+										<h1 class="anchor fw-bolder mb-5" id="footer-callback">
+										<a href="#footer-callback"></a>Footer Callback</h1>
+										<!--end::Heading-->
+										<!--begin::Block-->
+										<div class="py-5">This example shows the datatable footer dynamically calculating the sum of a specified column. This technique can be useful for summing up columns for balance sheets or financial data.</div>
+										<!--end::Block-->
+										<!--begin::Block-->
+										<div class="my-5">
+											<table id="kt_datatable_example_4" class="table table-striped gy-5 gs-7 border rounded">
+												<thead>
+													<tr>
+														<th>First name</th>
+														<th>Last name</th>
+														<th>Position</th>
+														<th>Office</th>
+														<th>Salary</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Tiger</td>
+														<td>Nixon</td>
+														<td>System Architect</td>
+														<td>Edinburgh</td>
+														<td>$320,800</td>
+													</tr>
+													<tr>
+														<td>Garrett</td>
+														<td>Winters</td>
+														<td>Accountant</td>
+														<td>Tokyo</td>
+														<td>$170,750</td>
+													</tr>
+													<tr>
+														<td>Ashton</td>
+														<td>Cox</td>
+														<td>Junior Technical Author</td>
+														<td>San Francisco</td>
+														<td>$86,000</td>
+													</tr>
+													<tr>
+														<td>Cedric</td>
+														<td>Kelly</td>
+														<td>Senior Javascript Developer</td>
+														<td>Edinburgh</td>
+														<td>$433,060</td>
+													</tr>
+													<tr>
+														<td>Airi</td>
+														<td>Satou</td>
+														<td>Accountant</td>
+														<td>Tokyo</td>
+														<td>$162,700</td>
+													</tr>
+													<tr>
+														<td>Brielle</td>
+														<td>Williamson</td>
+														<td>Integration Specialist</td>
+														<td>New York</td>
+														<td>$372,000</td>
+													</tr>
+													<tr>
+														<td>Herrod</td>
+														<td>Chandler</td>
+														<td>Sales Assistant</td>
+														<td>San Francisco</td>
+														<td>$137,500</td>
+													</tr>
+													<tr>
+														<td>Rhona</td>
+														<td>Davidson</td>
+														<td>Integration Specialist</td>
+														<td>Tokyo</td>
+														<td>$327,900</td>
+													</tr>
+													<tr>
+														<td>Colleen</td>
+														<td>Hurst</td>
+														<td>Javascript Developer</td>
+														<td>San Francisco</td>
+														<td>$205,500</td>
+													</tr>
+													<tr>
+														<td>Sonya</td>
+														<td>Frost</td>
+														<td>Software Engineer</td>
+														<td>Edinburgh</td>
+														<td>$103,600</td>
+													</tr>
+													<tr>
+														<td>Jena</td>
+														<td>Gaines</td>
+														<td>Office Manager</td>
+														<td>London</td>
+														<td>$90,560</td>
+													</tr>
+													<tr>
+														<td>Quinn</td>
+														<td>Flynn</td>
+														<td>Support Lead</td>
+														<td>Edinburgh</td>
+														<td>$342,000</td>
+													</tr>
+													<tr>
+														<td>Charde</td>
+														<td>Marshall</td>
+														<td>Regional Director</td>
+														<td>San Francisco</td>
+														<td>$470,600</td>
+													</tr>
+													<tr>
+														<td>Haley</td>
+														<td>Kennedy</td>
+														<td>Senior Marketing Designer</td>
+														<td>London</td>
+														<td>$313,500</td>
+													</tr>
+													<tr>
+														<td>Tatyana</td>
+														<td>Fitzpatrick</td>
+														<td>Regional Director</td>
+														<td>London</td>
+														<td>$385,750</td>
+													</tr>
+													<tr>
+														<td>Michael</td>
+														<td>Silva</td>
+														<td>Marketing Designer</td>
+														<td>London</td>
+														<td>$198,500</td>
+													</tr>
+													<tr>
+														<td>Paul</td>
+														<td>Byrd</td>
+														<td>Chief Financial Officer (CFO)</td>
+														<td>New York</td>
+														<td>$725,000</td>
+													</tr>
+													<tr>
+														<td>Gloria</td>
+														<td>Little</td>
+														<td>Systems Administrator</td>
+														<td>New York</td>
+														<td>$237,500</td>
+													</tr>
+													<tr>
+														<td>Bradley</td>
+														<td>Greer</td>
+														<td>Software Engineer</td>
+														<td>London</td>
+														<td>$132,000</td>
+													</tr>
+													<tr>
+														<td>Dai</td>
+														<td>Rios</td>
+														<td>Personnel Lead</td>
+														<td>Edinburgh</td>
+														<td>$217,500</td>
+													</tr>
+													<tr>
+														<td>Jenette</td>
+														<td>Caldwell</td>
+														<td>Development Lead</td>
+														<td>New York</td>
+														<td>$345,000</td>
+													</tr>
+													<tr>
+														<td>Yuri</td>
+														<td>Berry</td>
+														<td>Chief Marketing Officer (CMO)</td>
+														<td>New York</td>
+														<td>$675,000</td>
+													</tr>
+													<tr>
+														<td>Caesar</td>
+														<td>Vance</td>
+														<td>Pre-Sales Support</td>
+														<td>New York</td>
+														<td>$106,450</td>
+													</tr>
+													<tr>
+														<td>Doris</td>
+														<td>Wilder</td>
+														<td>Sales Assistant</td>
+														<td>Sydney</td>
+														<td>$85,600</td>
+													</tr>
+													<tr>
+														<td>Angelica</td>
+														<td>Ramos</td>
+														<td>Chief Executive Officer (CEO)</td>
+														<td>London</td>
+														<td>$1,200,000</td>
+													</tr>
+													<tr>
+														<td>Gavin</td>
+														<td>Joyce</td>
+														<td>Developer</td>
+														<td>Edinburgh</td>
+														<td>$92,575</td>
+													</tr>
+													<tr>
+														<td>Jennifer</td>
+														<td>Chang</td>
+														<td>Regional Director</td>
+														<td>Singapore</td>
+														<td>$357,650</td>
+													</tr>
+													<tr>
+														<td>Brenden</td>
+														<td>Wagner</td>
+														<td>Software Engineer</td>
+														<td>San Francisco</td>
+														<td>$206,850</td>
+													</tr>
+													<tr>
+														<td>Fiona</td>
+														<td>Green</td>
+														<td>Chief Operating Officer (COO)</td>
+														<td>San Francisco</td>
+														<td>$850,000</td>
+													</tr>
+													<tr>
+														<td>Shou</td>
+														<td>Itou</td>
+														<td>Regional Marketing</td>
+														<td>Tokyo</td>
+														<td>$163,000</td>
+													</tr>
+													<tr>
+														<td>Michelle</td>
+														<td>House</td>
+														<td>Integration Specialist</td>
+														<td>Sydney</td>
+														<td>$95,400</td>
+													</tr>
+													<tr>
+														<td>Suki</td>
+														<td>Burks</td>
+														<td>Developer</td>
+														<td>London</td>
+														<td>$114,500</td>
+													</tr>
+													<tr>
+														<td>Prescott</td>
+														<td>Bartlett</td>
+														<td>Technical Author</td>
+														<td>London</td>
+														<td>$145,000</td>
+													</tr>
+													<tr>
+														<td>Gavin</td>
+														<td>Cortez</td>
+														<td>Team Leader</td>
+														<td>San Francisco</td>
+														<td>$235,500</td>
+													</tr>
+													<tr>
+														<td>Martena</td>
+														<td>Mccray</td>
+														<td>Post-Sales support</td>
+														<td>Edinburgh</td>
+														<td>$324,050</td>
+													</tr>
+													<tr>
+														<td>Unity</td>
+														<td>Butler</td>
+														<td>Marketing Designer</td>
+														<td>San Francisco</td>
+														<td>$85,675</td>
+													</tr>
+													<tr>
+														<td>Howard</td>
+														<td>Hatfield</td>
+														<td>Office Manager</td>
+														<td>San Francisco</td>
+														<td>$164,500</td>
+													</tr>
+													<tr>
+														<td>Hope</td>
+														<td>Fuentes</td>
+														<td>Secretary</td>
+														<td>San Francisco</td>
+														<td>$109,850</td>
+													</tr>
+													<tr>
+														<td>Vivian</td>
+														<td>Harrell</td>
+														<td>Financial Controller</td>
+														<td>San Francisco</td>
+														<td>$452,500</td>
+													</tr>
+													<tr>
+														<td>Timothy</td>
+														<td>Mooney</td>
+														<td>Office Manager</td>
+														<td>London</td>
+														<td>$136,200</td>
+													</tr>
+													<tr>
+														<td>Jackson</td>
+														<td>Bradshaw</td>
+														<td>Director</td>
+														<td>New York</td>
+														<td>$645,750</td>
+													</tr>
+													<tr>
+														<td>Olivia</td>
+														<td>Liang</td>
+														<td>Support Engineer</td>
+														<td>Singapore</td>
+														<td>$234,500</td>
+													</tr>
+													<tr>
+														<td>Bruno</td>
+														<td>Nash</td>
+														<td>Software Engineer</td>
+														<td>London</td>
+														<td>$163,500</td>
+													</tr>
+													<tr>
+														<td>Sakura</td>
+														<td>Yamamoto</td>
+														<td>Support Engineer</td>
+														<td>Tokyo</td>
+														<td>$139,575</td>
+													</tr>
+													<tr>
+														<td>Thor</td>
+														<td>Walton</td>
+														<td>Developer</td>
+														<td>New York</td>
+														<td>$98,540</td>
+													</tr>
+													<tr>
+														<td>Finn</td>
+														<td>Camacho</td>
+														<td>Support Engineer</td>
+														<td>San Francisco</td>
+														<td>$87,500</td>
+													</tr>
+													<tr>
+														<td>Serge</td>
+														<td>Baldwin</td>
+														<td>Data Coordinator</td>
+														<td>Singapore</td>
+														<td>$138,575</td>
+													</tr>
+													<tr>
+														<td>Zenaida</td>
+														<td>Frank</td>
+														<td>Software Engineer</td>
+														<td>New York</td>
+														<td>$125,250</td>
+													</tr>
+													<tr>
+														<td>Zorita</td>
+														<td>Serrano</td>
+														<td>Software Engineer</td>
+														<td>San Francisco</td>
+														<td>$115,000</td>
+													</tr>
+													<tr>
+														<td>Jennifer</td>
+														<td>Acosta</td>
+														<td>Junior Javascript Developer</td>
+														<td>Edinburgh</td>
+														<td>$75,650</td>
+													</tr>
+													<tr>
+														<td>Cara</td>
+														<td>Stevens</td>
+														<td>Sales Assistant</td>
+														<td>New York</td>
+														<td>$145,600</td>
+													</tr>
+													<tr>
+														<td>Hermione</td>
+														<td>Butler</td>
+														<td>Regional Director</td>
+														<td>London</td>
+														<td>$356,250</td>
+													</tr>
+													<tr>
+														<td>Lael</td>
+														<td>Greer</td>
+														<td>Systems Administrator</td>
+														<td>London</td>
+														<td>$103,500</td>
+													</tr>
+													<tr>
+														<td>Jonas</td>
+														<td>Alexander</td>
+														<td>Developer</td>
+														<td>San Francisco</td>
+														<td>$86,500</td>
+													</tr>
+													<tr>
+														<td>Shad</td>
+														<td>Decker</td>
+														<td>Regional Director</td>
+														<td>Edinburgh</td>
+														<td>$183,000</td>
+													</tr>
+													<tr>
+														<td>Michael</td>
+														<td>Bruce</td>
+														<td>Javascript Developer</td>
+														<td>Singapore</td>
+														<td>$183,000</td>
+													</tr>
+													<tr>
+														<td>Donna</td>
+														<td>Snider</td>
+														<td>Customer Support</td>
+														<td>New York</td>
+														<td>$112,000</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr class="fw-bolder fs-6">
+														<th colspan="3" class="text-nowrap align-right">Total:</th>
+														<th colspan="2" class="text-danger fs-3"></th>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+										<!--end::Block-->
+										<!--begin::Code-->
+										<div class="py-5">
+											<!--begin::Highlight-->
+											<div class="highlight">
+												<button class="highlight-copy btn" data-bs-toggle="tooltip" title="Copy code">copy</button>
+												<ul class="nav nav-pills" role="tablist">
+													<li class="nav-item">
+														<a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_6105890dd751e" role="tab">HTML</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_6105890dd751f" role="tab">JAVASCRIPT</a>
+													</li>
+												</ul>
+												<div class="tab-content">
+													<div class="tab-pane fade show active" id="kt_highlight_6105890dd751e" role="tabpanel">
+														<div class="highlight-code">
+															<pre class="language-html" style="height:400px">
+<code class="language-html">&lt;table id="kt_datatable_example_4" class="table table-striped table-row-bordered gy-5 gs-7 border rounded"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;First name&lt;/th&gt;
+            &lt;th&gt;Last name&lt;/th&gt;
+            &lt;th&gt;Position&lt;/th&gt;
+            &lt;th&gt;Office&lt;/th&gt;
+            &lt;th&gt;Salary&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Tiger&lt;/td&gt;
+            &lt;td&gt;Nixon&lt;/td&gt;
+            &lt;td&gt;System Architect&lt;/td&gt;
+            &lt;td&gt;Edinburgh&lt;/td&gt;
+            &lt;td&gt;$320,800&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Garrett&lt;/td&gt;
+            &lt;td&gt;Winters&lt;/td&gt;
+            &lt;td&gt;Accountant&lt;/td&gt;
+            &lt;td&gt;Tokyo&lt;/td&gt;
+            &lt;td&gt;$170,750&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr class="fw-bolder fs-6"&gt;
+            &lt;th colspan="3" class="text-nowrap align-end"&gt;Total:&lt;/th&gt;
+            &lt;th colspan="2" class="text-danger fs-3"&gt;&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code>
+</pre>
+														</div>
+													</div>
+													<div class="tab-pane fade" id="kt_highlight_6105890dd751f" role="tabpanel">
+														<div class="highlight-code">
+															<pre class="language-javascript">
+<code class="language-javascript">$("#kt_datatable_example_4").DataTable({
+    "footerCallback": function(row, data, start, end, display) {
+        var api = this.api(),
+            data;
+
+        // Remove the formatting to get integer data for summation
+        var intVal = function(i) {
+            return typeof i === "string" ?
+                i.replace(/[\$,]/g, "") * 1 :
+                typeof i === "number" ?
+                i : 0;
+        };
+
+        // Total over all pages
+        var total = api
+            .column(4)
+            .data()
+            .reduce(function(a, b) {
+                return intVal(a) + intVal(b);
+            }, 0);
+
+        // Total over this page
+        var pageTotal = api
+            .column(4, {
+                page: "current"
+            })
+            .data()
+            .reduce(function(a, b) {
+                return intVal(a) + intVal(b);
+            }, 0);
+
+        // Update footer
+        $(api.column(4).footer()).html(
+            "$" + pageTotal + " ( $" + total + " total)"
+        );
+    }
+});</code>
+</pre>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end::Highlight-->
+										</div>
+										<!--end::Code-->
+									</div>
+									<!--end::Section-->
+									<!--begin::Section-->
+									<div class="pt-10">
+										<!--begin::Heading-->
+										<h1 class="anchor fw-bolder mb-5" id="dom-positioning">
+										<a href="#dom-positioning"></a>DOM Positioning</h1>
+										<!--end::Heading-->
+										<!--begin::Block-->
+										<div class="py-5">When customising DataTables for your own usage, you might find that the default position of the feature elements (filter input etc) is not quite to your liking. For more info please check 
+										<a href="https://datatables.net/examples/basic_init/dom.html" target="_blank" class="fw-bolder me-1">DOM positioning</a>documentation.</div>
+										<!--end::Block-->
+										<!--begin::Block-->
+										<div class="my-5">
+											<table id="kt_datatable_example_5" class="table table-striped gy-5 gs-7 border rounded">
+												<thead>
+													<tr class="fw-bolder fs-6 text-gray-800 px-7">
+														<th>Name</th>
+														<th>Position</th>
+														<th>Salary</th>
+														<th>Office</th>
+														<th>Extn.</th>
+														<th>E-mail</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Tiger Nixon</td>
+														<td>System Architect</td>
+														<td>Edinburgh</td>
+														<td>61</td>
+														<td>2011/04/25</td>
+														<td>$320,800</td>
+													</tr>
+													<tr>
+														<td>Garrett Winters</td>
+														<td>Accountant</td>
+														<td>Tokyo</td>
+														<td>63</td>
+														<td>2011/07/25</td>
+														<td>$170,750</td>
+													</tr>
+													<tr>
+														<td>Ashton Cox</td>
+														<td>Junior Technical Author</td>
+														<td>San Francisco</td>
+														<td>66</td>
+														<td>2009/01/12</td>
+														<td>$86,000</td>
+													</tr>
+													<tr>
+														<td>Cedric Kelly</td>
+														<td>Senior Javascript Developer</td>
+														<td>Edinburgh</td>
+														<td>22</td>
+														<td>2012/03/29</td>
+														<td>$433,060</td>
+													</tr>
+													<tr>
+														<td>Airi Satou</td>
+														<td>Accountant</td>
+														<td>Tokyo</td>
+														<td>33</td>
+														<td>2008/11/28</td>
+														<td>$162,700</td>
+													</tr>
+													<tr>
+														<td>Brielle Williamson</td>
+														<td>Integration Specialist</td>
+														<td>New York</td>
+														<td>61</td>
+														<td>2012/12/02</td>
+														<td>$372,000</td>
+													</tr>
+													<tr>
+														<td>Herrod Chandler</td>
+														<td>Sales Assistant</td>
+														<td>San Francisco</td>
+														<td>59</td>
+														<td>2012/08/06</td>
+														<td>$137,500</td>
+													</tr>
+													<tr>
+														<td>Rhona Davidson</td>
+														<td>Integration Specialist</td>
+														<td>Tokyo</td>
+														<td>55</td>
+														<td>2010/10/14</td>
+														<td>$327,900</td>
+													</tr>
+													<tr>
+														<td>Colleen Hurst</td>
+														<td>Javascript Developer</td>
+														<td>San Francisco</td>
+														<td>39</td>
+														<td>2009/09/15</td>
+														<td>$205,500</td>
+													</tr>
+													<tr>
+														<td>Sonya Frost</td>
+														<td>Software Engineer</td>
+														<td>Edinburgh</td>
+														<td>23</td>
+														<td>2008/12/13</td>
+														<td>$103,600</td>
+													</tr>
+													<tr>
+														<td>Jena Gaines</td>
+														<td>Office Manager</td>
+														<td>London</td>
+														<td>30</td>
+														<td>2008/12/19</td>
+														<td>$90,560</td>
+													</tr>
+													<tr>
+														<td>Quinn Flynn</td>
+														<td>Support Lead</td>
+														<td>Edinburgh</td>
+														<td>22</td>
+														<td>2013/03/03</td>
+														<td>$342,000</td>
+													</tr>
+													<tr>
+														<td>Charde Marshall</td>
+														<td>Regional Director</td>
+														<td>San Francisco</td>
+														<td>36</td>
+														<td>2008/10/16</td>
+														<td>$470,600</td>
+													</tr>
+													<tr>
+														<td>Haley Kennedy</td>
+														<td>Senior Marketing Designer</td>
+														<td>London</td>
+														<td>43</td>
+														<td>2012/12/18</td>
+														<td>$313,500</td>
+													</tr>
+													<tr>
+														<td>Tatyana Fitzpatrick</td>
+														<td>Regional Director</td>
+														<td>London</td>
+														<td>19</td>
+														<td>2010/03/17</td>
+														<td>$385,750</td>
+													</tr>
+													<tr>
+														<td>Michael Silva</td>
+														<td>Marketing Designer</td>
+														<td>London</td>
+														<td>66</td>
+														<td>2012/11/27</td>
+														<td>$198,500</td>
+													</tr>
+													<tr>
+														<td>Paul Byrd</td>
+														<td>Chief Financial Officer (CFO)</td>
+														<td>New York</td>
+														<td>64</td>
+														<td>2010/06/09</td>
+														<td>$725,000</td>
+													</tr>
+													<tr>
+														<td>Gloria Little</td>
+														<td>Systems Administrator</td>
+														<td>New York</td>
+														<td>59</td>
+														<td>2009/04/10</td>
+														<td>$237,500</td>
+													</tr>
+													<tr>
+														<td>Bradley Greer</td>
+														<td>Software Engineer</td>
+														<td>London</td>
+														<td>41</td>
+														<td>2012/10/13</td>
+														<td>$132,000</td>
+													</tr>
+													<tr>
+														<td>Dai Rios</td>
+														<td>Personnel Lead</td>
+														<td>Edinburgh</td>
+														<td>35</td>
+														<td>2012/09/26</td>
+														<td>$217,500</td>
+													</tr>
+													<tr>
+														<td>Jenette Caldwell</td>
+														<td>Development Lead</td>
+														<td>New York</td>
+														<td>30</td>
+														<td>2011/09/03</td>
+														<td>$345,000</td>
+													</tr>
+													<tr>
+														<td>Yuri Berry</td>
+														<td>Chief Marketing Officer (CMO)</td>
+														<td>New York</td>
+														<td>40</td>
+														<td>2009/06/25</td>
+														<td>$675,000</td>
+													</tr>
+													<tr>
+														<td>Caesar Vance</td>
+														<td>Pre-Sales Support</td>
+														<td>New York</td>
+														<td>21</td>
+														<td>2011/12/12</td>
+														<td>$106,450</td>
+													</tr>
+													<tr>
+														<td>Doris Wilder</td>
+														<td>Sales Assistant</td>
+														<td>Sydney</td>
+														<td>23</td>
+														<td>2010/09/20</td>
+														<td>$85,600</td>
+													</tr>
+													<tr>
+														<td>Angelica Ramos</td>
+														<td>Chief Executive Officer (CEO)</td>
+														<td>London</td>
+														<td>47</td>
+														<td>2009/10/09</td>
+														<td>$1,200,000</td>
+													</tr>
+													<tr>
+														<td>Gavin Joyce</td>
+														<td>Developer</td>
+														<td>Edinburgh</td>
+														<td>42</td>
+														<td>2010/12/22</td>
+														<td>$92,575</td>
+													</tr>
+													<tr>
+														<td>Jennifer Chang</td>
+														<td>Regional Director</td>
+														<td>Singapore</td>
+														<td>28</td>
+														<td>2010/11/14</td>
+														<td>$357,650</td>
+													</tr>
+													<tr>
+														<td>Brenden Wagner</td>
+														<td>Software Engineer</td>
+														<td>San Francisco</td>
+														<td>28</td>
+														<td>2011/06/07</td>
+														<td>$206,850</td>
+													</tr>
+													<tr>
+														<td>Fiona Green</td>
+														<td>Chief Operating Officer (COO)</td>
+														<td>San Francisco</td>
+														<td>48</td>
+														<td>2010/03/11</td>
+														<td>$850,000</td>
+													</tr>
+													<tr>
+														<td>Shou Itou</td>
+														<td>Regional Marketing</td>
+														<td>Tokyo</td>
+														<td>20</td>
+														<td>2011/08/14</td>
+														<td>$163,000</td>
+													</tr>
+													<tr>
+														<td>Michelle House</td>
+														<td>Integration Specialist</td>
+														<td>Sydney</td>
+														<td>37</td>
+														<td>2011/06/02</td>
+														<td>$95,400</td>
+													</tr>
+													<tr>
+														<td>Suki Burks</td>
+														<td>Developer</td>
+														<td>London</td>
+														<td>53</td>
+														<td>2009/10/22</td>
+														<td>$114,500</td>
+													</tr>
+													<tr>
+														<td>Prescott Bartlett</td>
+														<td>Technical Author</td>
+														<td>London</td>
+														<td>27</td>
+														<td>2011/05/07</td>
+														<td>$145,000</td>
+													</tr>
+													<tr>
+														<td>Gavin Cortez</td>
+														<td>Team Leader</td>
+														<td>San Francisco</td>
+														<td>22</td>
+														<td>2008/10/26</td>
+														<td>$235,500</td>
+													</tr>
+													<tr>
+														<td>Martena Mccray</td>
+														<td>Post-Sales support</td>
+														<td>Edinburgh</td>
+														<td>46</td>
+														<td>2011/03/09</td>
+														<td>$324,050</td>
+													</tr>
+													<tr>
+														<td>Unity Butler</td>
+														<td>Marketing Designer</td>
+														<td>San Francisco</td>
+														<td>47</td>
+														<td>2009/12/09</td>
+														<td>$85,675</td>
+													</tr>
+													<tr>
+														<td>Howard Hatfield</td>
+														<td>Office Manager</td>
+														<td>San Francisco</td>
+														<td>51</td>
+														<td>2008/12/16</td>
+														<td>$164,500</td>
+													</tr>
+													<tr>
+														<td>Hope Fuentes</td>
+														<td>Secretary</td>
+														<td>San Francisco</td>
+														<td>41</td>
+														<td>2010/02/12</td>
+														<td>$109,850</td>
+													</tr>
+													<tr>
+														<td>Vivian Harrell</td>
+														<td>Financial Controller</td>
+														<td>San Francisco</td>
+														<td>62</td>
+														<td>2009/02/14</td>
+														<td>$452,500</td>
+													</tr>
+													<tr>
+														<td>Timothy Mooney</td>
+														<td>Office Manager</td>
+														<td>London</td>
+														<td>37</td>
+														<td>2008/12/11</td>
+														<td>$136,200</td>
+													</tr>
+													<tr>
+														<td>Jackson Bradshaw</td>
+														<td>Director</td>
+														<td>New York</td>
+														<td>65</td>
+														<td>2008/09/26</td>
+														<td>$645,750</td>
+													</tr>
+													<tr>
+														<td>Olivia Liang</td>
+														<td>Support Engineer</td>
+														<td>Singapore</td>
+														<td>64</td>
+														<td>2011/02/03</td>
+														<td>$234,500</td>
+													</tr>
+													<tr>
+														<td>Bruno Nash</td>
+														<td>Software Engineer</td>
+														<td>London</td>
+														<td>38</td>
+														<td>2011/05/03</td>
+														<td>$163,500</td>
+													</tr>
+													<tr>
+														<td>Sakura Yamamoto</td>
+														<td>Support Engineer</td>
+														<td>Tokyo</td>
+														<td>37</td>
+														<td>2009/08/19</td>
+														<td>$139,575</td>
+													</tr>
+													<tr>
+														<td>Thor Walton</td>
+														<td>Developer</td>
+														<td>New York</td>
+														<td>61</td>
+														<td>2013/08/11</td>
+														<td>$98,540</td>
+													</tr>
+													<tr>
+														<td>Finn Camacho</td>
+														<td>Support Engineer</td>
+														<td>San Francisco</td>
+														<td>47</td>
+														<td>2009/07/07</td>
+														<td>$87,500</td>
+													</tr>
+													<tr>
+														<td>Serge Baldwin</td>
+														<td>Data Coordinator</td>
+														<td>Singapore</td>
+														<td>64</td>
+														<td>2012/04/09</td>
+														<td>$138,575</td>
+													</tr>
+													<tr>
+														<td>Zenaida Frank</td>
+														<td>Software Engineer</td>
+														<td>New York</td>
+														<td>63</td>
+														<td>2010/01/04</td>
+														<td>$125,250</td>
+													</tr>
+													<tr>
+														<td>Zorita Serrano</td>
+														<td>Software Engineer</td>
+														<td>San Francisco</td>
+														<td>56</td>
+														<td>2012/06/01</td>
+														<td>$115,000</td>
+													</tr>
+													<tr>
+														<td>Jennifer Acosta</td>
+														<td>Junior Javascript Developer</td>
+														<td>Edinburgh</td>
+														<td>43</td>
+														<td>2013/02/01</td>
+														<td>$75,650</td>
+													</tr>
+													<tr>
+														<td>Cara Stevens</td>
+														<td>Sales Assistant</td>
+														<td>New York</td>
+														<td>46</td>
+														<td>2011/12/06</td>
+														<td>$145,600</td>
+													</tr>
+													<tr>
+														<td>Hermione Butler</td>
+														<td>Regional Director</td>
+														<td>London</td>
+														<td>47</td>
+														<td>2011/03/21</td>
+														<td>$356,250</td>
+													</tr>
+													<tr>
+														<td>Lael Greer</td>
+														<td>Systems Administrator</td>
+														<td>London</td>
+														<td>21</td>
+														<td>2009/02/27</td>
+														<td>$103,500</td>
+													</tr>
+													<tr>
+														<td>Jonas Alexander</td>
+														<td>Developer</td>
+														<td>San Francisco</td>
+														<td>30</td>
+														<td>2010/07/14</td>
+														<td>$86,500</td>
+													</tr>
+													<tr>
+														<td>Shad Decker</td>
+														<td>Regional Director</td>
+														<td>Edinburgh</td>
+														<td>51</td>
+														<td>2008/11/13</td>
+														<td>$183,000</td>
+													</tr>
+													<tr>
+														<td>Michael Bruce</td>
+														<td>Javascript Developer</td>
+														<td>Singapore</td>
+														<td>29</td>
+														<td>2011/06/27</td>
+														<td>$183,000</td>
+													</tr>
+													<tr>
+														<td>Donna Snider</td>
+														<td>Customer Support</td>
+														<td>New York</td>
+														<td>27</td>
+														<td>2011/01/25</td>
+														<td>$112,000</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!--end::Block-->
+										<!--begin::Code-->
+										<div class="py-5">
+											<!--begin::Highlight-->
+											<div class="highlight">
+												<button class="highlight-copy btn" data-bs-toggle="tooltip" title="Copy code">copy</button>
+												<ul class="nav nav-pills" role="tablist">
+													<li class="nav-item">
+														<a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_6105890dd7549" role="tab">HTML</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_6105890dd754b" role="tab">JAVASCRIPT</a>
+													</li>
+												</ul>
+												<div class="tab-content">
+													<div class="tab-pane fade show active" id="kt_highlight_6105890dd7549" role="tabpanel">
+														<div class="highlight-code">
+															<pre class="language-html" style="height:400px">
+<code class="language-html">&lt;table id="kt_datatable_example_5" class="table table-striped table-row-bordered gy-5 gs-7 border rounded"&gt;
+    &lt;thead&gt;
+        &lt;tr class="fw-bolder fs-6 text-gray-800 px-7"&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Position&lt;/th&gt;
+            &lt;th&gt;Salary&lt;/th&gt;
+            &lt;th&gt;Office&lt;/th&gt;
+            &lt;th&gt;Extn.&lt;/th&gt;
+            &lt;th&gt;E-mail&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Tiger Nixon&lt;/td&gt;
+            &lt;td&gt;System Architect&lt;/td&gt;
+            &lt;td&gt;Edinburgh&lt;/td&gt;
+            &lt;td&gt;61&lt;/td&gt;
+            &lt;td&gt;2011/04/25&lt;/td&gt;
+            &lt;td&gt;$320,800&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Garrett Winters&lt;/td&gt;
+            &lt;td&gt;Accountant&lt;/td&gt;
+            &lt;td&gt;Tokyo&lt;/td&gt;
+            &lt;td&gt;63&lt;/td&gt;
+            &lt;td&gt;2011/07/25&lt;/td&gt;
+            &lt;td&gt;$170,750&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code>
+</pre>
+														</div>
+													</div>
+													<div class="tab-pane fade" id="kt_highlight_6105890dd754b" role="tabpanel">
+														<div class="highlight-code">
+															<pre class="language-javascript">
+<code class="language-javascript">$("#kt_datatable_example_5").DataTable({
+ "language": {  
+  "lengthMenu": "Show _MENU_",
+ },
+ "dom": 
+  "&lt;'row'" +
+  "&lt;'col-sm-6 d-flex align-items-center justify-conten-start'l&gt;" +
+  "&lt;'col-sm-6 d-flex align-items-center justify-content-end'f&gt;" +
+  "&gt;" +
+  
+  "&lt;'table-responsive'tr&gt;" +
+  
+  "&lt;'row'" + 
+  "&lt;'col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start'i&gt;" + 
+  "&lt;'col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end'p&gt;" +
+  "&gt;"
+});</code>
+</pre>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end::Highlight-->
+										</div>
+										<!--end::Code-->
+									</div>
+									<!--end::Section-->
+								</div>
+								<!--end::Card Body-->
+							</div>
+							<!--end::Card-->
+						</div>
+						<!--end::Container-->
+					</div>
+					<!--end::Content-->
+					<!--begin::Footer-->
+					<div class="py-4 d-flex flex-lg-column py-6" id="kt_footer">
+						<!--begin::Container-->
+						<div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+							<!--begin::Copyright-->
+							<div class="text-dark order-2 order-md-1">
+								<span class="text-muted fw-bold me-1">2021©</span>
+								<a href="https://keenthemes.com/" target="_blank" class="text-gray-800 text-hover-primary">Keenthemes</a>
+							</div>
+							<!--end::Copyright-->
+							<!--begin::Menu-->
+							<ul class="menu menu-gray-600 menu-hover-primary fw-bold order-1 align-items-center mb-3 mb-md-0">
+								<!--begin::Menu item-->
+								<li class="menu-item">
+									<!--begin::Menu link-->
+									<a href="https://www.youtube.com/c/KeenThemesTuts/videos" target="_blank" class="menu-link px-3">
+										<img alt="Keenthemes Youtube" src="../../../assets/media/svg/social-logos/youtube.svg" class="h-20px" />
+									</a>
+									<!--end::Menu link-->
+								</li>
+								<!--end::Menu link-->
+								<!--begin::Menu item-->
+								<li class="menu-item">
+									<!--begin::Menu link-->
+									<a href="https://github.com/KeenthemesHub" target="_blank" class="menu-link px-3">
+										<img alt="Keenthemes Github" src="../../../assets/media/svg/social-logos/github.svg" class="h-20px" />
+									</a>
+									<!--end::Menu link-->
+								</li>
+								<!--end::Menu link-->
+								<!--begin::Menu item-->
+								<li class="menu-item">
+									<!--begin::Menu link-->
+									<a href="https://twitter.com/keenthemes" target="_blank" class="menu-link px-3">
+										<img alt="Keenthemes Twitter" src="../../../assets/media/svg/social-logos/twitter.svg" class="h-20px" />
+									</a>
+									<!--end::Menu link-->
+								</li>
+								<!--end::Menu link-->
+								<!--begin::Menu item-->
+								<li class="menu-item">
+									<!--begin::Menu link-->
+									<a href="https://www.instagram.com/keenthemes" target="_blank" class="menu-link px-3">
+										<img alt="Keenthemes Instagram" src="../../../assets/media/svg/social-logos/instagram.svg" class="h-20px" />
+									</a>
+									<!--end::Menu link-->
+								</li>
+								<!--end::Menu link-->
+								<!--begin::Menu item-->
+								<li class="menu-item">
+									<!--begin::Menu link-->
+									<a href="https://www.facebook.com/keenthemes" target="_blank" class="menu-link px-3">
+										<img alt="Keenthemes Facebook" src="../../../assets/media/svg/social-logos/facebook.svg" class="h-20px" />
+									</a>
+									<!--end::Menu link-->
+								</li>
+								<!--end::Menu link-->
+								<!--begin::Menu item-->
+								<li class="menu-item">
+									<!--begin::Menu link-->
+									<a href="https://dribbble.com/keenthemes" target="_blank" class="menu-link px-3">
+										<img alt="Keenthemes Dribbble" src="../../../assets/media/svg/social-logos/dribbble.svg" class="h-20px" />
+									</a>
+									<!--end::Menu link-->
+								</li>
+								<!--end::Menu link-->
+							</ul>
+							<!--end::Menu-->
+						</div>
+						<!--end::Container-->
+					</div>
+					<!--end::Footer-->
+				</div>
+				<!--end::Wrapper-->
+			</div>
+			<!--end::Page-->
+		</div>
+		<!--end::Main-->
+		<!--begin::Exolore drawer toggle-->
+		<button id="kt_explore_toggle" class="btn btn-sm bg-body btn-color-gray-700 btn-active-primary shadow-sm position-fixed px-5 fw-bolder zindex-2 top-50 mt-10 end-0 transform-90 fs-6 rounded-top-0" title="Explore Metronic" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-trigger="hover">
+			<span id="kt_explore_toggle_label">Explore</span>
+		</button>
+		<!--end::Exolore drawer toggle-->
+		<!--begin::Exolore drawer-->
+		<div id="kt_explore" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="explore" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'350px', 'lg': '475px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_explore_toggle" data-kt-drawer-close="#kt_explore_close">
+			<!--begin::Card-->
+			<div class="card shadow-none rounded-0 w-100">
+				<!--begin::Header-->
+				<div class="card-header" id="kt_explore_header">
+					<h3 class="card-title fw-bolder text-gray-700">Explore Metronic</h3>
+					<div class="card-toolbar">
+						<button type="button" class="btn btn-sm btn-icon btn-active-light-primary me-n5" id="kt_explore_close">
+							<!--begin::Svg Icon | path: icons/duotone/Navigation/Close.svg-->
+							<span class="svg-icon svg-icon-2">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+									<g transform="translate(12.000000, 12.000000) rotate(-45.000000) translate(-12.000000, -12.000000) translate(4.000000, 4.000000)" fill="#000000">
+										<rect fill="#000000" x="0" y="7" width="16" height="2" rx="1" />
+										<rect fill="#000000" opacity="0.5" transform="translate(8.000000, 8.000000) rotate(-270.000000) translate(-8.000000, -8.000000)" x="0" y="7" width="16" height="2" rx="1" />
+									</g>
+								</svg>
+							</span>
+							<!--end::Svg Icon-->
+						</button>
+					</div>
+				</div>
+				<!--end::Header-->
+				<!--begin::Body-->
+				<div class="card-body" id="kt_explore_body">
+					<!--begin::Content-->
+					<div id="kt_explore_scroll" class="scroll-y me-n5 pe-5" data-kt-scroll="true" data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_explore_body" data-kt-scroll-dependencies="#kt_explore_header" data-kt-scroll-offset="5px">
+						<!--begin::Wrapper-->
+						<div class="mb-0">
+							<!--begin::Header-->
+							<div class="mb-7">
+								<div class="d-flex flex-stack">
+									<h3 class="mb-0">Metronic Licenses</h3>
+									<a href="https://themeforest.net/licenses/standard" class="fw-bold" target="_blank">License FAQs</a>
+								</div>
+							</div>
+							<!--end::Header-->
+							<!--begin::License-->
+							<div class="rounded border border-dashed border-gray-300 py-4 px-6 mb-5">
+								<div class="d-flex flex-stack">
+									<div class="d-flex flex-column">
+										<div class="d-flex align-items-center mb-1">
+											<div class="fs-6 fw-bold text-gray-800 fw-bold mb-0 me-1">Regular License</div>
+											<i class="text-gray-400 fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="popover" data-bs-custom-class="popover-dark" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Use, by you or one client in a single end product which end users are not charged for."></i>
+										</div>
+										<div class="fs-7 text-muted">For single end product used by you or one client</div>
+									</div>
+									<div class="text-nowrap">
+										<span class="text-muted fs-7 fw-bold me-n1">$</span>
+										<span class="text-dark fs-1 fw-bolder">39</span>
+									</div>
+								</div>
+							</div>
+							<!--end::License-->
+							<!--begin::License-->
+							<div class="rounded border border-dashed border-gray-300 py-4 px-6 mb-5">
+								<div class="d-flex flex-stack">
+									<div class="d-flex flex-column">
+										<div class="d-flex align-items-center mb-1">
+											<div class="fs-6 fw-bold text-gray-800 fw-bold mb-0 me-1">Extended License</div>
+											<i class="text-gray-400 fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="popover" data-bs-custom-class="popover-dark" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Use, by you or one client, in a single end product which end users can be charged for."></i>
+										</div>
+										<div class="fs-7 text-muted">For single end product with paying users.</div>
+									</div>
+									<div class="text-nowrap">
+										<span class="text-muted fs-7 fw-bold me-n1">$</span>
+										<span class="text-dark fs-1 fw-bolder">939</span>
+									</div>
+								</div>
+							</div>
+							<!--end::License-->
+							<!--begin::License-->
+							<div class="rounded border border-dashed border-gray-300 py-4 px-6 mb-5">
+								<div class="d-flex flex-stack">
+									<div class="d-flex flex-column">
+										<div class="d-flex align-items-center mb-1">
+											<div class="fs-6 fw-bold text-gray-800 fw-bold mb-0 me-1">Custom License</div>
+										</div>
+										<div class="fs-7 text-muted">Reach us for custom license offers.</div>
+									</div>
+									<div class="text-nowrap">
+										<a href="https://keenthemes.com/contact/" class="btn btn-sm btn-success" target="_blank">Contact Us</a>
+									</div>
+								</div>
+							</div>
+							<!--end::License-->
+							<!--begin::Purchase-->
+							<a href="https://1.envato.market/EA4JP" class="btn btn-primary mb-15 w-100">Buy Now</a>
+							<!--end::Purchase-->
+							<!--begin::Demos-->
+							<div class="mb-0">
+								<h3 class="fw-bolder text-center mb-6">Metronic Demos</h3>
+								<!--begin::Row-->
+								<div class="row g-5">
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative border border-4 border-success rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo1.png" alt="demo" class="w-100" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<a href="https://preview.keenthemes.com/metronic8/demo1" class="btn btn-sm btn-success shadow">Demo 1</a>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo2.png" alt="demo" class="w-100" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<a href="https://preview.keenthemes.com/metronic8/demo2" class="btn btn-sm btn-success shadow">Demo 2</a>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo3.png" alt="demo" class="w-100" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<a href="https://preview.keenthemes.com/metronic8/demo3" class="btn btn-sm btn-success shadow">Demo 3</a>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo4.png" alt="demo" class="w-100" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<a href="https://preview.keenthemes.com/metronic8/demo4" class="btn btn-sm btn-success shadow">Demo 4</a>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo5.png" alt="demo" class="w-100" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<a href="https://preview.keenthemes.com/metronic8/demo5" class="btn btn-sm btn-success shadow">Demo 5</a>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo6.png" alt="demo" class="w-100" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<a href="https://preview.keenthemes.com/metronic8/demo6" class="btn btn-sm btn-success shadow">Demo 6</a>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo7.png" alt="demo" class="w-100 opacity-75" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon</div>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo8.png" alt="demo" class="w-100 opacity-75" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon</div>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo9.png" alt="demo" class="w-100 opacity-75" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon</div>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo10.png" alt="demo" class="w-100 opacity-75" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon</div>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo11.png" alt="demo" class="w-100 opacity-75" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon</div>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo12.png" alt="demo" class="w-100 opacity-75" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon</div>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo13.png" alt="demo" class="w-100 opacity-75" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon</div>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo14.png" alt="demo" class="w-100 opacity-75" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon</div>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-6">
+										<!--begin::Demo-->
+										<div class="overlay overflow-hidden position-relative rounded">
+											<div class="overlay-wrapper">
+												<img src="../../../assets/media/demos/demo15.png" alt="demo" class="w-100 opacity-75" />
+											</div>
+											<div class="overlay-layer bg-dark bg-opacity-10">
+												<div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon</div>
+											</div>
+										</div>
+										<!--end::Demo-->
+									</div>
+									<!--end::Col-->
+								</div>
+								<!--end::Row-->
+							</div>
+							<!--end::Demos-->
+						</div>
+						<!--end::Wrapper-->
+					</div>
+					<!--end::Content-->
+				</div>
+				<!--end::Body-->
+			</div>
+			<!--end::Card-->
+		</div>
+		<!--end::Exolore drawer-->
+		<!--begin::Scrolltop-->
+		<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+			<!--begin::Svg Icon | path: icons/duotone/Navigation/Up-2.svg-->
+			<span class="svg-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<polygon points="0 0 24 0 24 24 0 24" />
+						<rect fill="#000000" opacity="0.5" x="11" y="10" width="2" height="10" rx="1" />
+						<path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z" fill="#000000" fill-rule="nonzero" />
+					</g>
+				</svg>
+			</span>
+			<!--end::Svg Icon-->
+		</div>
+		<!--end::Scrolltop-->
+		<!--begin::Javascript-->
+		<!--begin::Global Javascript Bundle(used by all pages)-->
+		<script src="../../../assets/plugins/global/plugins.bundle.js"></script>
+		<script src="../../../assets/js/scripts.bundle.js"></script>
+		<!--end::Global Javascript Bundle-->
+		<!--begin::Page Vendors Javascript(used by this page)-->
+		<script src="../../../assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
+		<script src="../../../assets/plugins/custom/datatables/datatables.bundle.js"></script>
+		<!--end::Page Vendors Javascript-->
+		<!--begin::Page Custom Javascript(used by this page)-->
+		<script src="../../../assets/js/custom/documentation/documentation.js"></script>
+		<script src="../../../assets/js/custom/documentation/general/datatables/advanced.js"></script>
+		<!--end::Page Custom Javascript-->
+		<!--end::Javascript-->
+		<!--Begin::Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FS8GGP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!--End::Google Tag Manager (noscript) -->
+	</body>
+	<!--end::Body-->
+
+<!-- Mirrored from preview.keenthemes.com/metronic8/demo1/documentation/general/datatables/advanced.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 31 Jul 2021 17:34:14 GMT -->
+</html>
